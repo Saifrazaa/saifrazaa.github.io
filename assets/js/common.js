@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  //Menu Item Tablet/Mobile Click
+  $(".tablet-mobile-sidebar-menu .menu-item").on("click", function () {
+    $(".tablet-mobile-sidebar-menu").removeClass("show");
+  });
+
   //Notifications Bell Btn Click
   $("#notifications-btn").on("click", function () {
     $(".notifications-sidebar").addClass("show");
@@ -90,6 +95,17 @@ $(document).ready(function () {
   $("#cancel-profile-settings-panel").on("click", function () {
     $(".profile-settings-popup").removeClass("show");
     $(".profile-settings-popup .overlay").addClass("d-none");
+  });
+
+  //Show Password Eye Click
+  $(".showPassword").on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).parent().children("input").attr("type", "password");
+    } else {
+      $(this).addClass("active");
+      $(this).parent().children("input").attr("type", "text");
+    }
   });
 
   //Save Profile Settings Changes Panel Button Click
@@ -254,11 +270,6 @@ $(document).ready(function () {
 
   $(".dropdown-btn").on("focusout", function () {
     $(this).parent().removeClass("active");
-  });
-
-  //Menu Item Tablet/Mobile Click
-  $(".tablet-mobile-sidebar-menu .menu-item").on("click", function () {
-    $(".tablet-mobile-sidebar-menu").removeClass("show");
   });
 
   //Profile Settings Button Mobile/Tablet Sidebar Menu
