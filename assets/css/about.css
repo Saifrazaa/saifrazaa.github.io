@@ -1,1 +1,116 @@
-.about-page .about-intro{background-image:url("../images/about_page/about-bg.jpg");background-repeat:no-repeat;background-size:cover;background-position:left;display:flex;justify-content:center;align-items:center;flex-direction:column;text-align:center;position:relative;z-index:1}.about-page .about-intro p{margin:0}.about-page .about-intro::after{position:absolute;height:100%;width:100%;z-index:-1;content:"";background-image:url("../images/mask-layer.png");background-size:cover;background-repeat:no-repeat}.about-page .about-mission{padding:0px 50px;text-align:center;display:flex;align-items:center;flex-direction:column;justify-content:center;position:relative}.about-page .about-our-values{display:flex;justify-content:center;align-items:center;flex-direction:column;padding:60px 200px;position:relative}.about-page .about-our-values .value-items-section{display:flex;flex-wrap:wrap;justify-content:center}.about-page .about-our-values .value-items-section .value-item{display:flex;flex-direction:column;align-items:center;margin:20px 10px;width:260px;text-align:center}.about-page .about-our-values .value-items-section .value-item img{height:200px;width:100%;object-fit:cover}@media only screen and (min-width: 1025px){.about-page .about-mission{padding:0 3.66vw !important}.about-page .about-our-values{padding:4.39vw 14.64vw !important}.about-page .about-our-values .value-items-section .value-item{margin:1.46vw .73vw !important;width:19.03vw !important}.about-page .about-our-values .value-items-section .value-item img{height:14.64vw !important}}@media only screen and (max-width: 1024px){.about-page br{display:none}.about-page .about-intro{padding:120px 30px !important}.about-page .about-mission{padding:80px 30px !important}.about-page .mark-divider.row-inverse{flex-direction:column !important}}@media only screen and (max-width: 480px){.about-page .about-our-values{padding:0px 10px !important;padding-top:50px !important}.about-page .about-our-values .value-items-section{display:flex;flex-wrap:wrap;justify-content:center}.about-page .about-our-values .value-items-section .value-item{margin:40px 10px !important;width:100% !important}.about-page .about-our-values .value-items-section .value-item img{height:auto;width:100%;object-fit:contain}.about-page .about-our-values .value-items-section .value-item h3{font-size:16px}.about-page .about-our-values .value-items-section .value-item p{font-size:14px !important}}
+.about-page .about-intro {
+  background-image: url("../images/about_page/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.about-page .about-intro p {
+  margin: 0;
+}
+.about-page .about-intro::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  content: "";
+  background-image: url("../images/mask-layer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-page .about-mission {
+  padding: 0px 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.about-page .about-our-values {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 200px;
+  position: relative;
+}
+.about-page .about-our-values .value-items-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about-page .about-our-values .value-items-section .value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 10px;
+  width: 260px;
+  text-align: center;
+}
+.about-page .about-our-values .value-items-section .value-item img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+@media only screen and (min-width: 1025px) {
+  .about-page .about-mission {
+    padding: 0 3.66vw !important;
+  }
+  .about-page .about-our-values {
+    padding: 4.39vw 14.64vw !important;
+  }
+  .about-page .about-our-values .value-items-section .value-item {
+    margin: 1.46vw 0.73vw !important;
+    width: 19.03vw !important;
+  }
+  .about-page .about-our-values .value-items-section .value-item img {
+    height: 14.64vw !important;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .about-page br {
+    display: none;
+  }
+  .about-page .about-intro {
+    padding: 120px 30px !important;
+  }
+  .about-page .about-mission {
+    padding: 80px 30px !important;
+  }
+  .about-page .mark-divider.row-inverse {
+    flex-direction: column !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .about-page .about-our-values {
+    padding: 0px 10px !important;
+    padding-top: 50px !important;
+  }
+  .about-page .about-our-values .value-items-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-page .about-our-values .value-items-section .value-item {
+    margin: 40px 10px !important;
+    width: 100% !important;
+  }
+  .about-page .about-our-values .value-items-section .value-item img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+  .about-page .about-our-values .value-items-section .value-item h3 {
+    font-size: 16px;
+  }
+  .about-page .about-our-values .value-items-section .value-item p {
+    font-size: 14px !important;
+  }
+}
