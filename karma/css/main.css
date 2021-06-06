@@ -1522,8 +1522,6 @@ h6 {
 /* banner area css
 ============================================================================================ */
 .banner-area {
-  background: url(../img/banner/banner-bg.jpg) center no-repeat;
-  background-size: cover;
   position: relative;
 }
 @media (max-width: 768px) {
@@ -4081,7 +4079,7 @@ label {
 
 .filter-bar {
   padding: 0px 20px 10px 20px;
-  background: #000;
+  background: #828bb3;
 }
 .filter-bar a,
 .filter-bar i {
@@ -4313,7 +4311,7 @@ label {
 }
 .sidebar-categories .head {
   line-height: 60px;
-  background: #000;
+  background: #828bb3;
   padding: 0 30px;
   font-size: 16px;
   font-weight: 400;
@@ -4351,7 +4349,7 @@ label {
 }
 .sidebar-filter .top-filter-head {
   line-height: 60px;
-  background: #000;
+  background: #828bb3;
   padding: 0 30px;
   font-size: 16px;
   font-weight: 400;
@@ -7503,4 +7501,7 @@ label {
 .vertical-active-scroll-img img{
   height: 350px;
   opacity: 0.15;
+}
+.features-inner{
+  background-color: #fff;
 }
