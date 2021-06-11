@@ -1,0 +1,421 @@
+/**** Colors CSS ****/
+@import "./components/colors";
+
+/*** Mixins ****/
+@import "./mixins.scss";
+
+#dashboard-content {
+  display: flex;
+  flex-direction: column;
+  // Weather Cards CSS Here
+  .weather-report-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    .weather-card {
+      min-width: 10%;
+      height: 35px;
+      // border-radius: 5px;
+      display: flex;
+      align-items: center;
+      .weather-country {
+        padding: 0px 10px;
+      }
+      .weather-temperature {
+        padding: 0px 10px;
+        i {
+          margin-right: 10px;
+        }
+        &.sunny {
+          i {
+            color: #f9a62c;
+          }
+        }
+        &.cloudy {
+          i {
+            color: #a5adb9;
+          }
+        }
+        &.rainy {
+          i {
+            color: #3cc480;
+          }
+        }
+      }
+      .weather-country-time {
+        padding: 0px 10px;
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  // Main Content CSS
+  .dashboard-main-section {
+    flex: 1;
+    padding-bottom: 15px;
+    .inner-wrapper {
+      background-color: $white;
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      .map-total-spent-section {
+        height: 60%;
+        overflow: hidden;
+        .map-section {
+          padding: 7px;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          .filter-buttons-section {
+            margin-bottom: 7px;
+            display: flex;
+            align-items: center;
+            .block-btn {
+              margin-right: 15px;
+            }
+          }
+          .dashboard-map-section {
+            flex: 1;
+            width: 100%;
+            overflow: hidden;
+            img {
+              height: 100%;
+              width: 100%;
+              object-fit: cover;
+            }
+            #googleMap {
+              height: 100%;
+              width: 100%;
+            }
+          }
+        }
+        .total-spent-section {
+          display: flex;
+          flex-direction: column;
+          border-top-right-radius: 5px;
+          height: 100%;
+          overflow: hidden;
+          .total-spent-amount-section {
+            height: 35%;
+            background-color: $primaryColor;
+            border-top-right-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10px 15px 15px;
+            .amount-wrapper {
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+              height: 100%;
+              .total-spent-amount {
+                font-size: 28px;
+                font-weight: 500;
+                sub {
+                  font-size: 12px;
+                }
+              }
+            }
+            .total-amount-spent-graph {
+              img {
+                height: 70px;
+              }
+            }
+          }
+          .dashboard-shipment-detail {
+            height: 100%;
+            background-color: $white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            visibility: hidden;
+            transform: translateX(-100%);
+            transition: all 0.3s ease;
+            .left-border-line {
+              width: 5px;
+              height: 100%;
+              background-color: $primaryColor;
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+              position: absolute;
+              left: 0;
+              top: 0;
+            }
+            .detail-wrapper {
+              margin: 8px 0;
+              margin-left: 25px;
+              width: 100%;
+              .content-margin-btm {
+                margin-bottom: 12px;
+              }
+              .marg-top-extr {
+                margin-top: 15px;
+                line-height: 1.3;
+              }
+              .marg-btm-extr {
+                margin-bottom: 15px;
+                line-height: 1.3;
+              }
+              .location-dist-img {
+                height: 50px;
+                margin: 5px 0px;
+                img {
+                  height: 100%;
+                }
+              }
+            }
+            .close-detail-icon {
+              position: absolute;
+              top: 10px;
+              right: 15px;
+            }
+            &.show {
+              visibility: visible;
+              transform: translateX(0%);
+            }
+          }
+        }
+      }
+      .trips-topdestination-section {
+        height: 40%;
+        .total-trips-section {
+          height: 100%;
+          .total-trips {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            .heading-text {
+              margin-bottom: 10px;
+            }
+            .total-trip-chart {
+              flex: 1;
+            }
+          }
+        }
+      }
+
+      //Common in the page
+      .destination-progress-wrap {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        height: 100%;
+        .heading-text {
+          padding: 10px 0px;
+        }
+        .destination-spent-items-wrapper {
+          flex: 1;
+          height: 0;
+          .destination-spent-item {
+            margin-top: 5px;
+            padding-right: 15px;
+            .destination-spent-progress {
+              display: flex;
+              align-items: center;
+              .spent-amount-wrap {
+                padding-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to("laptop") {
+  .weather-report-section {
+    margin: 0.73vw 0px !important;
+    .weather-card {
+      height: 2.56vw !important;
+      .weather-country {
+        padding: 0 0.73vw !important;
+      }
+      .weather-temperature {
+        padding: 0 0.73vw !important;
+        i {
+          margin-right: 0.73vw !important;
+        }
+      }
+      .weather-country-time {
+        padding: 0 0.73vw !important;
+        i {
+          margin-right: 0.73vw !important;
+        }
+      }
+    }
+  }
+  // Main Content CSS
+  .dashboard-main-section {
+    padding-bottom: 1vw !important;
+    .inner-wrapper {
+      border-radius: 0.366vw !important;
+      .map-total-spent-section {
+        .map-section {
+          width: 75%;
+          padding: 0.51vw !important;
+          .filter-buttons-section {
+            margin-bottom: 0.51vw !important;
+            .block-btn {
+              margin-right: 1.09vw !important;
+            }
+          }
+        }
+        .total-spent-section {
+          .total-spent-amount-section {
+            padding: 1.09vw 0.73vw 1.09vw 1.09vw !important;
+            .amount-wrapper {
+              .total-spent-amount {
+                font-size: 2.04vw !important;
+                sub {
+                  font-size: 0.87vw !important;
+                }
+              }
+            }
+            .total-amount-spent-graph {
+              img {
+                height: 5.12vw !important;
+              }
+            }
+          }
+          .dashboard-shipment-detail {
+            .left-border-line {
+              width: 0.366vw !important;
+              border-top-right-radius: 0.73vw !important;
+              border-bottom-right-radius: 0.73vw !important;
+            }
+            .detail-wrapper {
+              margin: 0.58vw 0 !important;
+              margin-left: 1.83vw !important;
+              .content-margin-btm {
+                margin-bottom: 0.87vw !important;
+              }
+              .marg-top-extr {
+                margin-top: 1.09vw !important;
+              }
+              .marg-btm-extr {
+                margin-bottom: 1.09vw !important;
+              }
+              .location-dist-img {
+                height: 3.66vw !important;
+                margin: 0.366vw 0 !important;
+              }
+            }
+            .close-detail-icon {
+              top: 0.73vw !important;
+              right: 1.09vw !important;
+            }
+          }
+        }
+      }
+
+      .trips-topdestination-section {
+        .total-trips-section {
+          .total-trips {
+            padding: 1.09vw !important;
+            .heading-text {
+              margin-bottom: 0.73vw !important;
+            }
+          }
+        }
+      }
+
+      //Common in the page
+      .destination-progress-wrap {
+        padding-left: 1.09vw !important;
+        padding-bottom: 0.73vw !important;
+        .heading-text {
+          padding: 0.73vw 0px !important;
+        }
+        .destination-spent-item {
+          margin-top: 0.366vw !important;
+          padding-right: 1.09vw !important;
+          .destination-spent-progress {
+            .spent-amount-wrap {
+              padding-left: 0.73vw !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to("tablet") {
+  // Weather Card Section CSS
+  .weather-report-section {
+    display: none !important;
+  }
+
+  // Main Content CSS
+  .dashboard-main-section {
+    .inner-wrapper {
+      border: none !important;
+      .map-total-spent-section {
+        min-height: 700px !important;
+        .map-section {
+          height: 350px !important;
+          border: none !important;
+          .filter-buttons-section {
+            margin: 7px;
+            flex-wrap: wrap;
+            .block-btn {
+              margin: 5px !important;
+            }
+          }
+        }
+        .total-spent-section {
+          border-top-right-radius: 0px !important;
+          min-height: 150px !important;
+          .total-spent-amount-section {
+            height: 110px !important;
+            border-top-right-radius: 0px !important;
+          }
+        }
+      }
+      .trips-topdestination-section {
+        flex-direction: column-reverse;
+        .total-trips-section {
+          .total-trips {
+            height: 250px !important;
+            &.vehicle-wise-graph {
+              border-top: 1px solid $borderColor;
+            }
+          }
+        }
+      }
+
+      //Common in the page
+      .destination-progress-wrap {
+        min-height: 100px !important;
+        .destination-spent-items-wrapper {
+          height: auto !important;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to("mobile") {
+  #dashboard-content {
+    .weather-report-section {
+      flex-direction: column !important;
+      .weather-card {
+        width: 100%;
+        margin: 5px 0px;
+        justify-content: space-around;
+      }
+    }
+  }
+}

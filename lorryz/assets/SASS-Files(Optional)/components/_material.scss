@@ -1,0 +1,124 @@
+@use "@material/theme" with (
+  $primary: $primaryColor,
+);
+
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+@use "@material/icon-button";
+@use "@material/top-app-bar/mdc-top-app-bar";
+@use "@material/button";
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+@use "@material/select/styles";
+@use '@material/select';
+
+/*** Material Button CSS ***/
+.mdc-button {
+  padding: 0px 20px !important;
+  .mdc-button__label {
+    text-transform: none;
+  }
+  &.mdc-button-transparent {
+    @include button.ink-color(#6b7983);
+    &:hover {
+      @include button.container-fill-color(rgba(0, 0, 0, 0.05));
+    }
+  }
+}
+
+/*** Dashboard Filter form fields css ***/
+.dashboard-filter-formfield {
+  @include select.outline-color(#e1e4e6);
+  margin-bottom: 0px !important;
+  .mdc-floating-label--float-above {
+    transform: translateY(-23.75px) scale(0.75) !important;
+    @include respond-to("laptop") {
+      transform: translateY(-1.738vw) scale(0.75) !important;
+    }
+  }
+}
+
+/**** Material.io Customization of textfields ****/
+.mdc-floating-label--float-above {
+  transform: translateY(-30.75px) scale(0.75) !important;
+  @include respond-to("laptop") {
+    transform: translateY(-2.251vw) scale(0.75) !important;
+  }
+}
+
+.custom-field {
+  height: 45px !important;
+  margin-bottom: 15px;
+  &.nomargin {
+    margin-bottom: 0 !important;
+  }
+  @include respond-to("laptop") {
+    height: 3.294vw !important;
+    margin-bottom: 1.09vw !important;
+    &.nomargin {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.custom-textarea-field {
+  width: 100% !important;
+  .mdc-text-field__resizer {
+    resize: none;
+  }
+}
+
+.mdc-select {
+  width: 100%;
+  margin-bottom: 15px;
+  @include select.outline-color(#e1e4e6);
+  .mdc-select__menu {
+    max-height: 230px !important;
+    &.mdc-select__menu-above {
+      transform-origin: center bottom !important;
+      bottom: 55px;
+      top: unset !important;
+    }
+  }
+  .mdc-select__anchor {
+    height: 45px;
+  }
+  @include respond-to("laptop") {
+    margin-bottom: 1.09vw;
+    .mdc-select__menu {
+      max-height: 16vw;
+      &.mdc-select__menu-above {
+        bottom: 4.026vw !important;
+      }
+    }
+    .mdc-select__anchor {
+      height: 3.294vw !important;
+    }
+  }
+}
+
+.mdc-text-field__icon--trailing {
+  padding: 0px !important;
+  color: $lightText !important;
+  &:focus {
+    outline: none !important;
+  }
+  &:hover {
+    color: $black !important;
+  }
+}
+
+.mdc-text-field.mdc-text-field--outlined {
+  @include textfield.outline-color(#e1e4e6);
+}
+
+.mdc-text-field__icon--leading {
+  margin-left: 0px !important;
+}
+
+@include button.core-styles;
+@include icon-button.core-styles;
+@include textfield.core-styles;
