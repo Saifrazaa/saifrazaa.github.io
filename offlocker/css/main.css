@@ -112,7 +112,7 @@
       opacity: 0.3; }
 
 .important {
-  color: #e94d49; }
+  color: #e94d49 !important; }
 
 body {
   line-height: 24px;
@@ -1549,7 +1549,7 @@ h6 {
         width: 30px;
         line-height: 30px;
         text-align: center;
-        background: #828bb2;
+        background: grey;
         border-radius: 50%;
         display: inline-block;
         color: #fff;
@@ -3156,7 +3156,7 @@ label {
 
 .filter-bar {
   padding: 0px 20px 10px 20px;
-  background: #828bb3; }
+  background: grey; }
   .filter-bar a,
   .filter-bar i {
     color: #000; }
@@ -3339,7 +3339,7 @@ label {
 
 .sidebar-categories .head {
   line-height: 60px;
-  background: #828bb3;
+  background: grey;
   padding: 0 30px;
   font-size: 16px;
   font-weight: 400;
@@ -3372,7 +3372,7 @@ label {
   margin-top: 50px; }
   .sidebar-filter .top-filter-head {
     line-height: 60px;
-    background: #828bb3;
+    background: grey;
     padding: 0 30px;
     font-size: 16px;
     font-weight: 400;
@@ -5910,3 +5910,28 @@ label {
   padding: 20px; }
   .navbar-brand span {
     font-weight: normal; }
+
+.distinctive-img {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; }
+  .distinctive-img img {
+    width: 130px;
+    opacity: 0.8; }
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 35px;
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0; }
+  .navbar-light .navbar-toggler {
+    border-color: #fff;
+    position: absolute;
+    left: 15px;
+    top: 15px; }
+    .navbar-light .navbar-toggler .icon-bar {
+      background: #fff !important; }
+  .navbar-expand-lg .container {
+    justify-content: center; } }
