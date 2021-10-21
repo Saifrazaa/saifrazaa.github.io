@@ -1,0 +1,121 @@
+<div class="main_menu">
+	<nav class="navbar navbar-expand-lg navbar-light main_box">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<a class="navbar-brand position-relative" href="index.html"><img src="img/logo.png"
+					alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+				<ul class="nav navbar-nav menu_nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="category.html">Categorías</a></li>
+						<!--
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+							aria-haspopup="true" aria-expanded="false">Store</a>
+						<ul class="dropdown-menu">
+							<li class="nav-item"><a class="nav-link" href="category.html">Shop Category</a></li>
+							<li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+							<li class="nav-item"><a class="nav-link" href="wishes.html">Wishes</a></li>
+						</ul> 
+					</li>-->
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="nav-item"><a href="cart.html" class="cart"><i class="ti-bag"><span id="cartTotal" class="badge rounded-pill badge-notification cartTotal" style="max-height: 20px !important;">0</span></i></a></li>
+					<li class="nav-item"><a href="wishes.html" class="cart"><span class="ti-heart"></span></a>
+					</li>
+					<li class="nav-item">
+						<button class="search"><span class="lnr lnr-magnifier" id="search"></span></button>
+					</li>
+					<li class="nav-item"><a href="javascript:;" class="cart" id="sign-up-popup"><span
+						class="ti-user"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+<div class="search_input" id="search_input_box">
+	<div class="container">
+		<form class="d-flex justify-content-between">
+			<input type="text" class="form-control" id="search_input" placeholder="Buscar">
+			<button type="submit" class="btn"></button>
+			<span class="lnr lnr-cross" id="close_search" title="Close Search"></span>
+		</form>
+	</div>
+</div>
+
+<!-- User Sign-up pop-up -->
+<div class="user-popup user-sign-up-popup d-none">
+	<img src="./img/logo.png" alt="Logo" />
+	<h1>
+		Registrar una nueva cuenta
+	</h1>
+	<!-- <h3 id="timer"> 
+		00:02:00
+	</h3>-->
+	<form>
+		<input type="text" id="frmMail" placeholder="Correo Electronico" class="form-field" />
+		<br />
+		<input type="password" id="frmPass" placeholder="Password" class="form-field" />
+		<br />
+		<input type="text" id="frmName" placeholder="Nombre Completo" class="form-field" />
+		<br />
+		<input type="text" id="frmCel" placeholder="Numero de Celular" class="form-field" />
+		<br />
+		<input type="text" id="frmAddr" placeholder="Direccion" class="form-field" />
+		<br />
+		<button onclick="fncRegister(event)">
+			UNIRSE
+		</button>
+	</form>
+	<div class="reg-form-post">Ya tienes una cuenta? <a href="javascript:;" id="login-popup">Ingresar</a></div>
+	<a href="javascript:;" class="close-popup close-popup-signup"><span class="ti-close"></span></a>
+</div>
+
+<!-- User Login pop-up -->
+<div class="user-popup user-login-popup d-none">
+	<img src="./img/logo.png" alt="Logo" />
+	<h1>
+		Iniciar sesión
+	</h1>
+	<h3>
+		Por favor, introduzca su correcto electrónico y contraseña:
+	</h3>
+	<form>
+		<input type="text" placeholder="Correo Electronico" class="form-field" id="logUser" />
+		<br />
+		<input type="password" placeholder="Password" class="form-field" id="logPass" />
+		<br />
+		<button onclick="fncLogIn(event)">
+			INICIAR SESION
+		</button>
+	</form>
+	<div class="reg-form-post">No tienes una cuenta? <a href="javascript:;" id="sign-up-popup2">Registrarse</a></div>
+	<a href="javascript:;" class="close-popup close-popup-login"><span class="ti-close"></span></a>
+</div>
+
+<div id="modalBagAdded" class="pmodal">
+	<div class="pmodal-content">
+		<div class="pmodal-header">
+			<span class="pclose"
+				onclick="document.getElementById('modalBagAdded').style.display = 'none'; return false;">&times;</span>
+			<h2 id="pmodalTitulo">Adicionado a la bolsa</h2>
+		</div>
+		<div class="pmodal-body">
+			<p> </p>
+			<p id="mbaText">Se ha adicionado a la bolsa el producto <b>-p-</b> </p>
+			<div class="button-group-area mt-40">
+				<a href="" class="genric-btn primary circle arrow"
+					onclick="document.getElementById('modalBagAdded').style.display = 'none'; return false;">Seguir
+					comprando<span class="lnr lnr-arrow-right"></span></a>
+				<a href="cart.html" class="genric-btn success circle arrow">Ver la bolsa<span
+						class="lnr lnr-arrow-right"></span></a>
+			</div>
+		</div>
+	</div>
+</div>

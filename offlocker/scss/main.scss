@@ -1,0 +1,40 @@
+
+// including variables and mixins
+@import "./theme/variables";
+@import "./theme/mixins";
+@import "./theme/predefine";
+@import "./theme/reset";
+
+
+// Custom Scss 
+@import "./theme/elements";
+@import "./theme/header";
+@import "./theme/banner";
+@import "./theme/home";
+@import "./theme/common";
+@import "./theme/product";
+@import "./theme/blog";
+@import "./theme/contact";
+@import "./theme/footer";
+
+.whatsapp-floating-logo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    img{
+        height: 70px;
+        width: 70px;
+    }
+}
+.navbar-brand{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    color: $important !important;
+    background-color: black;
+    padding: 20px;
+    span{
+        font-weight: normal;
+    }
+}
