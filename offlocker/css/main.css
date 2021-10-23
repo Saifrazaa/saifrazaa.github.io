@@ -5912,7 +5912,8 @@ label {
 .distinctive-img {
   position: fixed;
   bottom: 20px;
-  left: 20px; }
+  left: 20px;
+  z-index: 99; }
   .distinctive-img img {
     width: 130px;
     opacity: 0.8; }
