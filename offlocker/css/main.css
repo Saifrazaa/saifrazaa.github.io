@@ -1215,9 +1215,9 @@ h6 {
 /* banner area css
 ============================================================================================ */
 .banner-area {
-  background: url(../img/banner/banner-bg.jpg) center no-repeat;
-  background-size: cover;
-  position: relative; }
+  background-color: #222222;
+  position: relative;
+  margin-bottom: 50px; }
   @media (max-width: 768px) {
     .banner-area .fullscreen {
       height: 650px !important; } }
@@ -1238,7 +1238,7 @@ h6 {
     .banner-area .active-banner-slider .owl-nav .owl-next {
       display: inline-block;
       margin: 10px;
-      opacity: .5;
+      opacity: 0.5;
       -webkit-transition: all 0.3s ease 0s;
       -moz-transition: all 0.3s ease 0s;
       -o-transition: all 0.3s ease 0s;
@@ -1262,9 +1262,16 @@ h6 {
           line-height: 46px; } }
     .banner-area .banner-content p {
       margin: 0; }
-  @media (max-width: 991px) {
-    .banner-area .banner-img {
-      display: none; } }
+  .banner-area::after {
+    position: absolute;
+    height: 122px;
+    width: 111%;
+    content: "";
+    bottom: -55px;
+    z-index: -1;
+    transform: rotate(-3deg);
+    right: -27px;
+    background: #222222; }
 
 .add-bag {
   margin-top: 30px; }
@@ -1291,22 +1298,13 @@ h6 {
     color: #222222; }
 
 .organic-breadcrumb {
-  background: url(../img/banner/common-banner.jpg) center no-repeat;
-  background-size: cover;
   padding-top: 130px; }
   @media (max-width: 991px) {
     .organic-breadcrumb {
       padding-top: 80px; } }
-  @media (max-width: 767px) {
-    .organic-breadcrumb {
-      background: none;
-      background: -webkit-linear-gradient(90deg, grey 0%, #ff6c00 100%);
-      background: -moz-linear-gradient(90deg, grey 0%, #ff6c00 100%);
-      background: -o-linear-gradient(90deg, grey 0%, #ff6c00 100%);
-      background: linear-gradient(90deg, grey 0%, #ff6c00 100%); } }
 
 #category .organic-breadcrumb {
-  margin-bottom: 100px; }
+  margin-bottom: 150px; }
 
 .breadcrumb-banner {
   padding: 90px 0 100px 0; }
@@ -5934,4 +5932,27 @@ label {
     .navbar-light .navbar-toggler .icon-bar {
       background: #fff !important; }
   .navbar-expand-lg .container {
-    justify-content: center; } }
+    justify-content: center; }
+  footer::after {
+    display: none; }
+  .banner-area::after {
+    display: none; }
+  .distinctive-img {
+    display: none; } }
+
+html {
+  overflow-x: hidden; }
+
+footer {
+  position: relative;
+  margin-top: 100px; }
+  footer::after {
+    position: absolute;
+    height: 122px;
+    width: 111%;
+    content: "";
+    top: -55px;
+    z-index: -1;
+    transform: rotate(-3deg);
+    right: -27px;
+    background: #222222; }
