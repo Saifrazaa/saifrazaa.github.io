@@ -65,6 +65,12 @@
     right: -27px;
     background: #222222;
   }
+  &.home {
+    background-color: #fff;
+    &::after {
+      display: none;
+    }
+  }
 }
 .add-bag {
   margin-top: 30px;

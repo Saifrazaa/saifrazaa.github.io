@@ -68,13 +68,16 @@
       justify-content: center;
     }
   }
-  footer::after{
+  footer::after {
     display: none;
   }
-  .banner-area::after{
+  .banner-area::after {
     display: none;
   }
   .distinctive-img {
+    display: none;
+  }
+  .header-rectangle{
     display: none;
   }
 }
@@ -95,4 +98,22 @@ footer {
     right: -27px;
     background: #222222;
   }
+}
+
+.header-rectangle {
+  background-color: #222222;
+  height: 200px;
+  position: relative;
+  &::after {
+    position: absolute;
+    height: 122px;
+    width: 111%;
+    content: "";
+    bottom: -55px;
+    z-index: 1;
+    transform: rotate(-3deg);
+    right: -27px;
+    background: #222222;
+  }
+  
 }
