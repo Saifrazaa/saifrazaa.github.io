@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 			data.lastproductos.forEach(function callback(producto, index, array) {
 
-				latestProduct += `<div class="col-lg-3 col-md-6">
+				latestProduct += `<div class="col-lg-3 col-md-6 col-6">
 												<div class="single-product">
 													<div class="zoom">
 													<a href="single-product.html?id=` + producto.prod_id + `" >
@@ -60,7 +60,7 @@ $(document).ready(function () {
 			data.nextproductos.forEach(function callback(producto, index, array) {
 
 				nextProduct += `        
-									<div class="col-lg-3 col-md-6">
+									<div class="col-lg-3 col-md-6 col-6">
 										<div class="single-product">
 											<a href="single-product.html?id=` + producto.prod_id + `">
 												<img src="` + url + `/upload/avatar/` + producto.picname + `"  onError="this.src = 'img/nophoto.png' " alt="">

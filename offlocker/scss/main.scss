@@ -26,13 +26,12 @@
   }
 }
 .navbar-brand {
-  font-size: 50px;
-  font-style: italic;
-  font-weight: bold;
-  color: $important !important;
-  background-color: black;
-  padding: 20px;
+  width: 250px;
+  img{
+    width: 100%;
+  }
   span {
+    font-size: 40px;
     font-weight: normal;
   }
 }
@@ -59,9 +58,6 @@
     position: absolute;
     left: 15px;
     top: 15px;
-    .icon-bar {
-      background: #fff !important;
-    }
   }
   .navbar-expand-lg {
     .container {
@@ -77,7 +73,7 @@
   .distinctive-img {
     display: none;
   }
-  .header-rectangle{
+  .header-rectangle {
     display: none;
   }
 }
@@ -101,19 +97,12 @@ footer {
 }
 
 .header-rectangle {
-  background-color: #222222;
-  height: 200px;
+  background-image: url('../img/grey-camouflage.jpg');
+  height: 400px;
   position: relative;
-  &::after {
-    position: absolute;
-    height: 122px;
-    width: 111%;
-    content: "";
-    bottom: -55px;
-    z-index: 1;
-    transform: rotate(-3deg);
-    right: -27px;
-    background: #222222;
-  }
-  
+  width: 120%;
+  transform: rotate(-3deg);
+  z-index: 9;
+  top: -52px;
+  right: 13px;
 }

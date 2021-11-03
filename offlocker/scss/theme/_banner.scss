@@ -1,7 +1,6 @@
 /* banner area css
 ============================================================================================ */
 .banner-area {
-  background-color: #222222;
   position: relative;
   margin-bottom: 50px;
   .fullscreen {
@@ -53,17 +52,6 @@
     p {
       margin: 0;
     }
-  }
-  &::after {
-    position: absolute;
-    height: 122px;
-    width: 111%;
-    content: "";
-    bottom: -55px;
-    z-index: -1;
-    transform: rotate(-3deg);
-    right: -27px;
-    background: #222222;
   }
   &.home {
     background-color: #fff;

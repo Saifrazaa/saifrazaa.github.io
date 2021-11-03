@@ -55,7 +55,7 @@ function filterList(search, categoria, marca_id, precioMin,precioMax, order, qty
 		
 		if(data && data.result && data.result.length > 0){
 			data.result.forEach(function callback(producto, index, array) {
-				productResultList += `<div class="col-lg-4 col-md-6 col-sm-4">
+				productResultList += `<div class="col-lg-4 col-md-6 col-sm-4 col-6">
 							<div class="single-product">
 								<a href="single-product.html?id=` + producto.prod_id + `">
 									<img class="img-fluid" src="` + url + `/upload/avatar/` + producto.picname + `"  onError="this.src = 'img/nophoto.png' "  alt="">

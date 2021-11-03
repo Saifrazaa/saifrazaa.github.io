@@ -1008,7 +1008,7 @@ h6 {
 
 .header_area {
   position: absolute;
-  width: 1140px !important;
+  width: 100% !important;
   top: 0;
   z-index: 99;
   transition: background 0.4s, all 0.3s linear;
@@ -1017,9 +1017,6 @@ h6 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s; }
   .header_area .main_menu .main_box {
-    background: url("../../offlocker/img/grey-camouflage.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     margin: 0px auto 0;
     max-width: 1200px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -1053,7 +1050,7 @@ h6 {
         display: inline-block;
         font-size: 12px;
         font-weight: 500;
-        color: white; }
+        color: grey; }
         @media (min-width: 991px) {
           .header_area .navbar .nav .nav-item .nav-link {
             padding: 10px 0; } }
@@ -1152,7 +1149,7 @@ h6 {
           .header_area .navbar .nav.navbar-nav.navbar-right li:first-child {
             display: none; } }
       .header_area .navbar .nav.navbar-nav.navbar-right li span {
-        color: white;
+        color: grey;
         line-height: 80px;
         font-weight: 500; }
     .header_area .navbar .nav.navbar-nav.navbar-right .search {
@@ -1214,12 +1211,11 @@ h6 {
 @media (max-width: 575px) {
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid {
-    padding: 0px 15px; } }
+    padding: 8px 15px; } }
 
 /* banner area css
 ============================================================================================ */
 .banner-area {
-  background-color: #222222;
   position: relative;
   margin-bottom: 50px; }
   @media (max-width: 768px) {
@@ -1266,16 +1262,6 @@ h6 {
           line-height: 46px; } }
     .banner-area .banner-content p {
       margin: 0; }
-  .banner-area::after {
-    position: absolute;
-    height: 122px;
-    width: 111%;
-    content: "";
-    bottom: -55px;
-    z-index: -1;
-    transform: rotate(-3deg);
-    right: -27px;
-    background: #222222; }
   .banner-area.home {
     background-color: #fff; }
     .banner-area.home::after {
@@ -5757,7 +5743,7 @@ label {
 /* End Contact Success and error Area css
 ============================================================================================ */
 .footer-area {
-  padding: 40px 0;
+  padding: 70px 0;
   background-color: #222222; }
   .footer-area h6 {
     color: #fff;
@@ -5908,13 +5894,11 @@ label {
     width: 70px; }
 
 .navbar-brand {
-  font-size: 50px;
-  font-style: italic;
-  font-weight: bold;
-  color: #E94D49 !important;
-  background-color: black;
-  padding: 20px; }
+  width: 250px; }
+  .navbar-brand img {
+    width: 100%; }
   .navbar-brand span {
+    font-size: 40px;
     font-weight: normal; }
 
 .distinctive-img {
@@ -5938,8 +5922,6 @@ label {
     position: absolute;
     left: 15px;
     top: 15px; }
-    .navbar-light .navbar-toggler .icon-bar {
-      background: #fff !important; }
   .navbar-expand-lg .container {
     justify-content: center; }
   footer::after {
@@ -5969,16 +5951,11 @@ footer {
     background: #222222; }
 
 .header-rectangle {
-  background-color: #222222;
-  height: 200px;
-  position: relative; }
-  .header-rectangle::after {
-    position: absolute;
-    height: 122px;
-    width: 111%;
-    content: "";
-    bottom: -55px;
-    z-index: 1;
-    transform: rotate(-3deg);
-    right: -27px;
-    background: #222222; }
+  background-image: url("../img/grey-camouflage.jpg");
+  height: 400px;
+  position: relative;
+  width: 120%;
+  transform: rotate(-3deg);
+  z-index: 9;
+  top: -52px;
+  right: 13px; }
