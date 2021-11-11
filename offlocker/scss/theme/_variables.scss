@@ -1,29 +1,24 @@
-
 //    Font Family
 
-$primary-font	: 'Roboto', sans-serif;
-$title-font     : 'Poppins', sans-serif;
+$primary-font: "Roboto", sans-serif;
+$title-font: "Poppins", sans-serif;
 
 /*--------------------------- Color variations ----------------------*/
 
-$primary-color	: grey;
-$primary-color2	: #ff6c00;
-$important      : #E94D49;
-$primary-color3	: #828bb3;
-$title-color	: #222222;
-$text-color		: #777777;
-$baseColor: #c5322d; 
+$primary-color: grey;
+$primary-color2: #ff6c00;
+$important: #e94d49;
+$primary-color3: #828bb3;
+$title-color: #222222;
+$text-color: #777777;
+$baseColor: #c5322d;
 $dip: #222222;
 $pfont: #777777;
-$white			: #fff;
-$black			: #000;
+$white: #fff;
+$black: #000;
 $offwhite: #fcfcfc;
 
 /*--------------------------- Fonts ----------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:500,700|Roboto:400,500');
-
-
-
-
-
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,700|Roboto:400,500");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap");

@@ -2,10 +2,10 @@
 ============================================================================================ */
 .banner-area {
   position: relative;
-  margin-bottom: 50px;
   .fullscreen {
     @media (max-width: 768px) {
-      height: 650px !important;
+      height: 550px !important;
+      padding-top: 60px;
     }
   }
   .active-banner-slider {
