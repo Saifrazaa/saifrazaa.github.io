@@ -36,7 +36,7 @@
 }
 .distinctive-img {
   position: fixed;
-  bottom: 20px;
+  bottom: -10px;
   left: 20px;
   z-index: 99;
   img {
@@ -100,4 +100,8 @@ footer {
   z-index: 9;
   top: -60px;
   right: 13px;
+}
+
+.owl-item{
+  width: 100%;
 }

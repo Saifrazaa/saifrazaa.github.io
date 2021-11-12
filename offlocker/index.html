@@ -88,9 +88,15 @@
 							<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li class="nav-item"><a href="cart.html" class="cart"><span class="ti-bag"></span></a></li>
+							<li class="nav-item">
+								<a href="cart.html" class="cart"><span class="ti-bag"></span><span style="font-size: 11px;margin-left: 3px;">0</span></a>
+							</li>
+							<li class="nav-item"><a href="wishes.html" class="cart"><span class="ti-heart"></span></a></li>
 							<li class="nav-item">
 								<button class="search"><span class="lnr lnr-magnifier" id="search"></span></button>
+							</li>
+							<li class="nav-item">
+								<a href="login.html" class="cart"><span class="ti-user"></span></a>
 							</li>
 						</ul>
 					</div>
@@ -113,7 +119,7 @@
 
 	<!-- start banner Area -->
 	<section class="banner-area">
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row fullscreen align-items-center justify-content-start">
 				<div class="col-lg-12">
 					<div class="active-product-area owl-carousel" id="bigCarrousel">
@@ -124,66 +130,6 @@
 		</div>
 	</section>
 	<!-- End banner Area -->
-
-	<section class="features-area section_gap">
-		<div class="container">
-			<div class="row features-inner">
-				<!-- single features -->
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="single-features">
-						<div class="f-icon">
-							<i class="ti-truck"></i>
-						</div>
-						<h6 class="white">Envio Gratuito</h6>
-						<p class="white "><a href="#condiciones" class="open-popup-link important">Ver condiciones</a></p>
-					</div>
-				</div>
-				<div id="condiciones" class="white-popup mfp-hide">
-					contenido de las condiciones
-				</div>
-				<!-- single features -->
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="single-features">
-						<div class="f-icon">
-							<i class="ti-reload"></i>
-						</div>
-						<h6 class="white">Politica de Devoluciones</h6>
-						<p class="white"><a href="#politica" class="open-popup-link important">Ver politica</a></p>
-					</div>
-				</div>
-				<div id="politica" class="white-popup mfp-hide">
-					contenido de las politicas
-				</div>
-				<!-- single features -->
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="single-features">
-						<div class="f-icon">
-							<i class="ti-headphone-alt"></i>
-						</div>
-						<h6 class="white">Horario de Atencion 9AM-6PM</h6>
-						<p class="white"><a href="#disponibilidad" class="open-popup-link important">Ver disponibilidad</a></p>
-					</div>
-				</div>
-				<div id="disponibilidad" class="white-popup mfp-hide">
-					contenido de disponibilidad
-				</div>
-				<!-- single features -->
-				<div class="col-lg-3 col-md-6 col-sm-6">
-					<div class="single-features">
-						<div class="f-icon">
-							<i class="ti-server"></i>
-						</div>
-						<h6 class="white">Pagos Electronicos</h6>
-						<p class="white"><a href="#mediopago" class="open-popup-link important">Ver medios de pago aceptados</a>
-						</p>
-					</div>
-				</div>
-				<div id="mediopago" class="white-popup mfp-hide">
-					contenido de medios de pago
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<!-- Start category Area -->
 	<section class="category-area">
@@ -292,6 +238,69 @@
 		</div>
 	</section>
 	<!-- end product Area -->
+
+	<section class="features-area section_gap">
+		<div class="container">
+			<div class="row features-inner">
+				<!-- single features -->
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-features">
+						<div class="f-icon">
+							<i class="ti-truck"></i>
+						</div>
+						<h6 class="white">Envio Gratuito</h6>
+						<p class="white "><a href="#condiciones" class="open-popup-link important">Ver condiciones</a>
+						</p>
+					</div>
+				</div>
+				<div id="condiciones" class="white-popup mfp-hide">
+					contenido de las condiciones
+				</div>
+				<!-- single features -->
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-features">
+						<div class="f-icon">
+							<i class="ti-reload"></i>
+						</div>
+						<h6 class="white">Politica de Devoluciones</h6>
+						<p class="white"><a href="#politica" class="open-popup-link important">Ver politica</a></p>
+					</div>
+				</div>
+				<div id="politica" class="white-popup mfp-hide">
+					contenido de las politicas
+				</div>
+				<!-- single features -->
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-features">
+						<div class="f-icon">
+							<i class="ti-headphone-alt"></i>
+						</div>
+						<h6 class="white">Horario de Atencion 9AM-6PM</h6>
+						<p class="white"><a href="#disponibilidad" class="open-popup-link important">Ver
+								disponibilidad</a></p>
+					</div>
+				</div>
+				<div id="disponibilidad" class="white-popup mfp-hide">
+					contenido de disponibilidad
+				</div>
+				<!-- single features -->
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="single-features border-0">
+						<div class="f-icon">
+							<i class="ti-server"></i>
+						</div>
+						<h6 class="white">Pagos Electronicos</h6>
+						<p class="white"><a href="#mediopago" class="open-popup-link important">Ver medios de pago
+								aceptados</a>
+						</p>
+					</div>
+				</div>
+				<div id="mediopago" class="white-popup mfp-hide">
+					contenido de medios de pago
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!-- Whatsapp Link -->
 	<a href="https://api.whatsapp.com/send?phone=573014004674" class="whatsapp-floating-logo">

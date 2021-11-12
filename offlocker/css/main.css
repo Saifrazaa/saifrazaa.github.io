@@ -1460,12 +1460,11 @@ h6 {
 /* start product area css
 ============================================================================================ */
 .active-product-area {
-  padding-top: 100px;
-  padding-bottom: 50px; }
+  padding: 100px 0; }
   .active-product-area .owl-nav div {
     position: absolute;
     left: 35%;
-    top: 10%;
+    top: 6%;
     opacity: 0.3; }
     @media (max-width: 1440px) {
       .active-product-area .owl-nav div {
@@ -5942,7 +5941,7 @@ label {
 
 .distinctive-img {
   position: fixed;
-  bottom: 20px;
+  bottom: -10px;
   left: 20px;
   z-index: 99; }
   .distinctive-img img {
@@ -5994,3 +5993,6 @@ footer {
   z-index: 9;
   top: -60px;
   right: 13px; }
+
+.owl-item {
+  width: 100%; }

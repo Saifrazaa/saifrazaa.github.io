@@ -172,13 +172,12 @@
 /* start product area css
 ============================================================================================ */
 .active-product-area {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 100px 0;
   .owl-nav {
     div {
       position: absolute;
       left: 35%;
-      top: 10%;
+      top: 6%;
       opacity: 0.3;
       @media (max-width: 1440px) {
         left: 30%;
