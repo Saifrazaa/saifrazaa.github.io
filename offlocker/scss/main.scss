@@ -26,13 +26,9 @@
   }
 }
 .navbar-brand {
-  font-size: 66px;
-  color: $important !important;
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-  font-weight: 1000;
-  -webkit-text-stroke: 1px black;
-  letter-spacing: -2px;
+  img {
+    width: 250px;
+  }
 }
 .distinctive-img {
   position: fixed;
@@ -46,7 +42,9 @@
 }
 @media (max-width: 991px) {
   .navbar-brand {
-    font-size: 44px;
+    img {
+      width: 150px;
+    }
   }
   .navbar-light .navbar-toggler {
     border-color: #fff;
@@ -102,6 +100,6 @@ footer {
   right: 13px;
 }
 
-.owl-item{
+.owl-item {
   width: 100%;
 }

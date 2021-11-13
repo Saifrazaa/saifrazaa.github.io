@@ -5930,14 +5930,8 @@ label {
     height: 70px;
     width: 70px; }
 
-.navbar-brand {
-  font-size: 66px;
-  color: #e94d49 !important;
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-  font-weight: 1000;
-  -webkit-text-stroke: 1px black;
-  letter-spacing: -2px; }
+.navbar-brand img {
+  width: 250px; }
 
 .distinctive-img {
   position: fixed;
@@ -5949,8 +5943,8 @@ label {
     opacity: 0.15; }
 
 @media (max-width: 991px) {
-  .navbar-brand {
-    font-size: 44px; }
+  .navbar-brand img {
+    width: 150px; }
   .navbar-light .navbar-toggler {
     border-color: #fff;
     position: absolute;
