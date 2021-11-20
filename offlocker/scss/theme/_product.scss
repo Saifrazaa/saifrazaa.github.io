@@ -513,7 +513,6 @@
 	h2{
 		font-size: 24px;
 		font-weight: bold;
-		@extend .gradient-color;
 		margin-bottom: 15px;
 	}
 	.list{
@@ -523,7 +522,7 @@
 				font-size: 14px;
 				font-family: $primary-font;
 				font-weight: normal;
-				color: #555555;
+				color: black;
 				span{
 					width: 90px;
 					display: inline-block;
@@ -532,10 +531,9 @@
 					}
 				}
 				&.active{
-					@extend .gradient-color;
 					span{
-						color: #555;
-						-webkit-text-fill-color: #555;
+						color: black;
+						-webkit-text-fill-color: black;
 					}
 				}
 			}
