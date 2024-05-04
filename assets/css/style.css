@@ -63,7 +63,7 @@ a:hover {
 .box-shadow-a,
 .button:hover {
   text-decoration: none;
-  box-shadow: 0 0 0 2px #FFFFFF;
+  box-shadow: 0 0 0 2px #ffffff;
 }
 
 .display-5 {
@@ -262,8 +262,8 @@ a:hover {
   color: #ffffff;
 }
 
-.ico-circle.social{
-  background-color: #FFFFFF;
+.ico-circle.social {
+  background-color: #ffffff;
   color: #292929;
 }
 
@@ -332,12 +332,12 @@ a:hover {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #FFFFFF;
+  background: #ffffff;
   width: 40px;
   height: 40px;
   border-radius: 50px;
   transition: all 0.4s;
-  border:1px solid #FFFFFF
+  border: 1px solid #ffffff;
 }
 
 .back-to-top i {
@@ -351,7 +351,7 @@ a:hover {
 }
 
 .back-to-top:hover i {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .back-to-top.active {
@@ -1079,13 +1079,11 @@ a:hover {
 
 .testimonial-box .author-test .author-designation {
   font-size: 1rem;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 
-.testimonial-box .author
-
-.testimonial-box .comit {
+.testimonial-box .author .testimonial-box .comit {
   font-size: 2rem;
   color: #292929;
   background-color: #fff;
@@ -1478,6 +1476,33 @@ footer .credits a {
   background-color: #292929;
 }
 
-.more-info{
+.more-info {
   padding-right: 2rem;
+}
+
+#social .socials-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 2rem;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+}
+
+#social .socials-wrapper a {
+  margin: 0 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#social .socials-wrapper a:hover{
+  background-color: #FFFFFF;
+  color: #292929;
 }
