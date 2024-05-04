@@ -98,19 +98,6 @@ a:hover {
   }
 }
 
-.overlay-mf {
-  background-color: #292929;
-}
-
-.overlay-mf {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
 .paralax-mf {
   position: relative;
   padding: 3rem 0;
@@ -878,7 +865,7 @@ a:hover {
 --------------------------------------------------------------*/
 .service-box {
   background-color: #2f2f2f;
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -910,7 +897,9 @@ a:hover {
 }
 
 .service-box .s-description {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
 /*--------------------------------------------------------------
@@ -1075,6 +1064,7 @@ a:hover {
 .testimonial-box {
   color: #fff;
   text-align: center;
+  mix-blend-mode: luminosity;
 }
 
 .testimonial-box .author-test {
@@ -1083,8 +1073,8 @@ a:hover {
 
 .testimonial-box .author-test img {
   margin: 0 auto;
-  mix-blend-mode: luminosity;
   margin-bottom: 2rem;
+  mix-blend-mode: luminosity;
 }
 
 .testimonial-box .author-test .author-designation {
@@ -1146,10 +1136,6 @@ a:hover {
 --------------------------------------------------------------*/
 .footer-paralax {
   padding: 4rem 0 0 0;
-}
-
-.contact-mf {
-  margin-top: 4rem;
 }
 
 @media (min-width: 767px) {
@@ -1490,4 +1476,8 @@ footer .credits a {
 
 .bg-dark-color {
   background-color: #292929;
+}
+
+.more-info{
+  padding-right: 2rem;
 }
