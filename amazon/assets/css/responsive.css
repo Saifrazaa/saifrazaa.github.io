@@ -1,0 +1,149 @@
+@media (min-width: 0px) and (max-width: 769px){
+
+	header .navwrp ul li a{
+	   display: none;
+	}
+
+	.btn-1{
+		    margin: 0px 0 10px 0;
+		    width: 100%;
+		    text-align: center;
+	}
+	section.packagewrp .col-md-4{    max-width: 100%;}
+	.portfoliowrp .navwrp ul li{display: block;}
+	.btn-2{
+		text-align: center;
+	}
+
+	.home-banner-wrp .btnwrp .btn-2{
+		    width: 100%;
+    margin: 0;
+	}
+	.mypopup-wrap .mypopup .left{display: none;}
+	.home-banner-wrp .btm-logos ul{
+		display: none;
+	}
+
+	.cstm-banner-form{
+		width: 100%;
+	}
+	.mypopup-wrap{width: 100%;}
+	.mypopup-wrap .mypopup .right{width: 100%;}
+	.designunigue{
+		display: none;
+	}
+.mypopup-wrap .mypopup .right .mypopup-innerwrap{    padding-top: 30px;}
+.packagewrp .txtwrp{width: 100%;}
+	.secnd-fld .txtwrp h2{
+		    margin: 20px 0 0 0;
+	}
+
+	section.secnd-fld .btnwrp .btn-2 {
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+
+.secnd-fld{
+	    padding: 60px 0;
+}
+
+.cta .img-wrp img{
+	display: none;
+}
+
+.cta .btnwrp a.btn-2{
+	margin: 10px 0 0 0;
+    width: 100%;
+}
+
+.cta{
+	    padding: 40px 0 60px 0;
+}
+
+.portdoliowrp .btm-port-img ul li img{
+	    margin: 40px 0 0 0;
+}
+
+section.portdoliowrp .btnwrp .btn-2{
+	    width: 90%;
+    margin: 10px 0 0 0;
+}
+
+section.portdoliowrp .btnwrp .btn-1{
+	width: 90%;
+}
+
+.packagewrp .pkgrwrp ul li.pkgebox{
+	width: 98%;
+	display: block;
+}
+
+.newwrp:before{
+	display: none;
+}
+
+.newwrp .mainbox{
+	    padding: 0px 0 0 30px;
+}
+
+.newwrp{
+	    padding: 0px 0 20px;
+}
+
+.btn-y{
+	width: 90%;
+    margin: 0px 0 20px 0;
+}
+
+.query-sec .txtwrp ul{
+	    margin: 10px 0px 0 20px;
+}
+
+.testiwrp .imgwrp img{
+	width: 100%;
+}
+
+.testiwrp .txtdiv h6{
+	    margin: 20px 0 0 0;
+}
+
+section.myprocess.main-ghst-sec .intl-tel-input .numwrp{
+	width: 120%;
+}
+
+.form-box-main form input[type=submit]{
+	width: 100%;
+}
+
+.form-ryt-img img{
+	display: none;
+}
+
+footer .btnwrp a.btn-1{
+	padding: 15px 130px;
+	    margin: 20px 0 0 0px;
+}
+
+footer .btnwrp a.btn-2{
+	    margin: 20px 0 0 0;
+	        padding: 15px 130px;
+	        width: 100%;
+}
+
+.packagewrp{
+	    padding: 0px 0;
+}
+
+.myprocess{
+	padding: 0px 0;
+}
+
+.portdoliowrp{
+	padding: 10px 0 40px;
+}
+
+.floating-form{
+	display: none;
+}
+}
+
