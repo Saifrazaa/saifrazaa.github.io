@@ -36,6 +36,10 @@ $(document).scroll(function () {
 $(document).ready(function () {
   "use strict";
 
+  $('.main-disclaimer-content button').click(function(){
+    $('.main-disclaimer').hide();
+  })
+
   //*****************************
   // Sale Black Friday and Cyber Monday
   //*****************************
@@ -896,3 +900,4 @@ $(function () {
     },
   });
 });
+
