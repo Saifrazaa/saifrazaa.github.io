@@ -1218,16 +1218,17 @@ a:hover {
 }
 
 .php-email-form button[type="submit"] {
-  background: #ffffff;
-  border: 0;
-  padding: 10px 24px;
-  color: #292929;
+  background: #292929;
+  border: 1px solid #FFFFFF;
+  padding: 5px 24px;
+  color: #FFFFFF;
   transition: 0.4s;
+  font-size: 0.9rem;
 }
 
 .php-email-form button[type="submit"]:hover {
-  background: #292929;
-  color: #ffffff;
+  background: #FFFFFF;
+  color: #292929;
 }
 
 @keyframes animate-loading {
@@ -1509,4 +1510,24 @@ footer .credits a {
 #social .socials-wrapper a:hover{
   background-color: #FFFFFF;
   color: #292929;
+}
+
+
+/* See All Projects */
+.see-all{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.see-all a{
+  padding: 0.4rem 1.6rem;
+  border-radius: 2rem;
+  border:1px solid #FFFFFF;
+  background-color: #292929;
+  color: #FFFFFF;
+}
+
+.see-all a:hover{
+  color: #292929;
+  background-color: #FFFFFF;
 }
