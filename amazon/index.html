@@ -28,19 +28,22 @@
   <header>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
           <div class="logowrp">
             <!-- <a href="">
               <img src="assets/images/logo.png">
             </a> -->
           </div>
         </div>
-        <div class="col-md-6 my-auto">
+        <div class="col-md-8 my-auto">
           <div class="navwrp">
             <ul>
               <li>
-                <a class="blink" href="tel:+12292229167"><i class="fa fa-phone" aria-hidden="true"></i>(229)
+                <a class="blink" href="tel:+12292229167"><i class="fa fa-phone" aria-hidden="true"></i> (229)
                   222-9167</a>
+              </li>
+              <li>
+                <a class="blink" href="mailto:dummy@example.com"><i class="fa fa-envelope" aria-hidden="true"></i> dummy@example.com</a>
               </li>
               <li>
                 <button class="chatbtn blink openChatButton">Live Chat</button>
@@ -113,11 +116,6 @@
                   src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   data-src="assets/images/cl-2.png">
               </li>
-              <li>
-                <img class="lazy"
-                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                  data-src="assets/images/cl-1.png">
-              </li>
             </ul>
           </div>
         </div>
@@ -135,14 +133,18 @@
                 <input name="Name" minlength="5" class="round" type="text" placeholder="Enter Name" required="">
                 <input type="hidden" name="form_name" value="Banner Form">
                 <input class="roundright" type="email" name="Email" placeholder="Enter email here" required>
-                <input name="Number" required="" type="text" minlength="10" maxlength="10" autocomplete="off"
+                <input name="Number" required="" type="text" minlength="11" maxlength="11" autocomplete="off"
                   onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) )" placeholder="Number">
                 <textarea name="Message" class="required" required=""
                   placeholder="To help us understand better, enter a brief description about your project."
                   aria-required="true"></textarea>
-                <div class="mt-2 mb-2" style="text-align: left;">
-                  By signing up, you need to accept <a href="https://www.amazonglobalpublishers.com/terms-and-condition"
-                    style="display: inline;color: #007bff;padding: 0;font-weight: normal;">terms and conditions</a>
+                <div class="mt-2 mb-2" style="text-align: left;display: flex;align-items: center;">
+                  <input type="checkbox" style="width: 20px;height: 20px;margin-right: 10px;" />
+                  <div>
+                    By signing up, you need to accept <a
+                      href="https://www.amazonglobalpublishers.com/terms-and-condition"
+                      style="display: inline;color: #007bff;padding: 0;font-weight: normal;">terms and conditions</a>
+                  </div>
                 </div>
                 <input class="btnwrp" type="Submit" value="Submit">
                 <input class="" type="hidden" name="ctry" value="">
@@ -214,7 +216,7 @@
               <div class="pkgbox">
                 <div class="pricebox"> <sup>$</sup>
                   <h3>699</h3>
-                  <div class="package-off"> <span>Now $699</span> <strike>was $1,398</strike> </div>
+                  <div class="package-off"> <strike>was $1,398</strike> </div>
                 </div>
                 <ul class="scrollbar list-scroll style-14">
                   <h4>FEATURES</h4>
@@ -250,7 +252,7 @@
               <div class="pkgbox">
                 <div class="pricebox"> <sup>$</sup>
                   <h3>1,199</h3>
-                  <div class="package-off"> <span>now $1,199</span> <strike>was $2,398</strike> </div>
+                  <div class="package-off"> <strike>was $2,398</strike> </div>
                 </div>
                 <ul class="scrollbar list-scroll style-14">
                   <h4>FEATURES</h4>
@@ -289,7 +291,7 @@
               <div class="pkgbox">
                 <div class="pricebox"> <sup>$</sup>
                   <h3>1,499</h3>
-                  <div class="package-off"> <span>now $1,499</span> <strike>was $2,998</strike> </div>
+                  <div class="package-off"> <strike>was $2,998</strike> </div>
                 </div>
                 <ul class="scrollbar list-scroll style-14">
                   <h4>FEATURES:</h4>
@@ -329,7 +331,7 @@
               <div class="pkgbox">
                 <div class="pricebox"> <sup>$</sup>
                   <h3>2,499</h3>
-                  <div class="package-off"> <span>now $2,499</span> <strike>was $4,998</strike> </div>
+                  <div class="package-off"> <strike>was $4,998</strike> </div>
                 </div>
                 <ul class="scrollbar list-scroll style-14">
                   <h4>FEATURES:</h4>
@@ -374,7 +376,7 @@
               <div class="pkgbox">
                 <div class="pricebox"> <sup>$</sup>
                   <h3>3,999</h3>
-                  <div class="package-off"> <span>now $3,999</span> <strike>was $7,998</strike> </div>
+                  <div class="package-off"> <strike>was $7,998</strike> </div>
                 </div>
                 <ul class="scrollbar list-scroll style-14">
                   <h4>FEATURES:</h4>
@@ -419,7 +421,7 @@
               <div class="pkgbox">
                 <div class="pricebox"> <sup>$</sup>
                   <h3>7,999</h3>
-                  <div class="package-off"> <span>now $7,999</span> <strike>was $15,998</strike> </div>
+                  <div class="package-off"> <strike>was $15,998</strike> </div>
                 </div>
                 <ul class="scrollbar list-scroll style-14">
                   <h4>FEATURES:</h4>
@@ -1412,9 +1414,12 @@
                 <textarea class="form-control" name="Message" placeholder="Talk about services you're looking for."
                   required></textarea>
               </div>
-              <div class="mt-2">
-                By signing up, you need to accept <a
-                  href="https://www.amazonglobalpublishers.com/terms-and-condition">terms and conditions</a>
+              <div class="mt-3 mb-2" style="display: flex;align-items: center;">
+                <input type="checkbox" style="width: 20px;height: 20px;margin-right: 10px;margin-bottom: 0;" />
+                <div>
+                  By signing up, you need to accept <a href="https://www.amazonglobalpublishers.com/terms-and-condition"
+                    style="display: inline;color: #007bff;padding: 0;font-weight: normal;">terms and conditions</a>
+                </div>
               </div>
               <div class="">
                 <div class="clearfix"></div>
@@ -1469,9 +1474,12 @@
                       <textarea class="form-control" name="Message"
                         placeholder="Talk about services you're looking for." required></textarea>
                     </div>
-                    <div class="mt-2" style="font-size: 0.9rem; color: white;">
-                      By signing up, you need to accept <a
-                        href="https://www.amazonglobalpublishers.com/terms-and-condition">terms and conditions</a>
+                    <div class="mt-2" style="font-size: 0.9rem; color: white;display: flex;align-items: center;">
+                      <input type="checkbox" style="width: 15px;height: 15px;margin-right: 10px;margin-bottom: 0;" />
+                      <div>
+                        By signing up, you need to accept <a
+                          href="https://www.amazonglobalpublishers.com/terms-and-condition">terms and conditions</a>
+                      </div>
                     </div>
                     <div class="dtf text-left">
                       <input class="submit" type="submit" value="Submit">
@@ -1498,22 +1506,10 @@
       <p>This website use cookies to help you have a superior and more relevant browsing experience on the website.</p>
     </div>
     <div class="buttons">
-      <button class="button" id="acceptBtn">OK</button>
+      <button class="button" id="acceptBtn">Accept</button>
     </div>
   </div>
   <div class="overlay" style="display: none;"></div>
-  <div class="main-disclaimer">
-    <div class="main-disclaimer-content">
-      <h3>Disclaimer</h3>
-      <p>
-        Amazon Global Publishers is an independent entity (not connected in any way with Amazon.com) helping
-        self-reliant authors with book publishing and marketing solutions.
-      </p>
-      <button>
-        <i class="fa fa-close"></i>
-      </button>
-    </div>
-  </div>
   <script>
     const cookieBox = document.querySelector(".wrapper"),
       buttons = document.querySelectorAll(".button");
