@@ -1,7 +1,2387 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lorryz - Dashboard</title><link href="assets/icons/all.css" rel="stylesheet"><link href="assets/css/shipments.css" rel="stylesheet"><link href="assets/css/main.css" rel="stylesheet"><link rel="stylesheet" href="assets/css/plugins/simplebar.css"/><script src="assets/js/plugins/jquery.min.js"></script><link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css"><link rel="stylesheet" href="assets/css/plugins/daterangepicker.css"><link rel="stylesheet" href="assets/css/plugins/mdtimepicker.css"></head><body><header class="header"><div class="topbar-inner-wrapper"><div class="topbar-left"><div class="tablet-mobile-menu-btn" id="menu-btn-tab-mobile"><i class="far fa-bars"></i></div><div class="company-logo"><img src="assets/images/lorryz-logo.png" alt="Lorryz Logo"/></div><button class="rounded-btn text" id="new-shipment-btn">New Shipment</button> <a href="dashboard.html" class="page-nav-link text">Dashboard </a><a href="shipments.html" class="page-nav-link text active">Shipments</a></div><div class="topbar-right"><button class="iconButton small" id="currency-converter-btn"><i class="far fa-money-bill-wave"></i></button> <button class="iconButton small" id="notifications-btn"><i class="far fa-bell"></i><div class="count">6</div></button><div class="overlay d-none"></div><div class="user-details"><div class="greet">Welcome</div><div class="user-name">Hassan Rana</div></div><div class="profileWrapper"><div class="avatar medium" id="user-avatar-btn"><img src="assets/images/user1.jpg" alt="User Image"/></div><div class="user-profile-dropdown"><div class="menu-item" id="profile-settings-btn"><i class="far fa-cog"></i>Settings</div><div class="menu-item"><i class="far fa-sign-out-alt"></i>Log Out</div><div class="pointer"><i class="fas fa-triangle"></i></div></div></div></div></div></header><div class="contentSection" id="shipments-content"><div class="shipments-list"><div class="shipments-search-bar"><div class="searchbar-wrapper"><i class="far fa-search text"></i> <input class="small-text searchbar" placeholder="Search for name and number..."/></div><button id="dashboard-custom-filter-btn"><i class="far fa-filter text"></i></button></div><div class="applied-filters-section d-none marginLeft"><div class="dropdown-wrapper"><button class="dropdown-btn small-text">3 filters applied</button><div class="dropdown-menu-wrapper"><div class="dropdown-item-wrapper text"><div class="dropdown-item-label">Date</div><div class="dropdown-item-action"><i class="far fa-times"></i></div></div><div class="dropdown-item-wrapper text"><div class="dropdown-item-label">Location</div><div class="dropdown-item-action"><i class="far fa-times"></i></div></div><div class="dropdown-item-wrapper text"><div class="dropdown-item-label">Vehicle Type</div><div class="dropdown-item-action"><i class="far fa-times"></i></div></div><div class="dropdown-item-wrapper text"><div class="dropdown-item-label">Status</div><div class="dropdown-item-action"><i class="far fa-times"></i></div></div></div></div><a class="primaryColor small-text" href="javascript:;" id="clear-dashboard-applied-filters">Clear Filter</a></div><ul class="shipments-tabs tabs nav nav-tabs show" role="tablist" id="myTab"><li class="tab nav-item"><div class="nav-link active" id="ongoing-shipments-tab" data-toggle="tab" href="#ongoing-shipments" role="tab" aria-controls="ongoing-shipments" aria-selected="false"><div class="tab-heading text lightText">Ongoing</div></div></li><li class="tab nav-item"><div class="nav-link" id="upcoming-shipments-tab" data-toggle="tab" href="#upcoming-shipments" role="tab" aria-controls="upcoming-shipments" aria-selected="true"><div class="tab-heading text lightText">Upcoming</div></div></li><li class="tab nav-item"><div class="nav-link" id="completed-shipments-tab" data-toggle="tab" href="#completed-shipments" role="tab" aria-controls="completed-shipments" aria-selected="true"><div class="tab-heading text lightText">Completed</div></div></li></ul><div class="tab-content"><div id="ongoing-shipments" class="tab-pane active" role="tabpanel" aria-labelledby="ongoing-shipments" data-simplebar><div class="shipment-item"><div class="small-text semiBold">Shipment No <span class="primaryColor bold-text text-margin-left">6547</span> <span class="pill extra-small-text text-margin-left">Enroute to loading point</span></div><div class="pickup-dropoff-location"><div class="location-info"><div class="extra-small-text lightText">Pickup Location</div><div class="text semiBold location-address">Oman</div></div><div class="location-diff-line"><img src="assets/images/location-line-hor.svg" alt="Location Line"/></div><div class="location-info"><div class="extra-small-text lightText">Dropoff Location</div><div class="text semiBold location-address">Kuwait</div></div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-user-tie extra-lightText"></i> 05</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-money-bill-wave extra-lightText"></i> AED 15,000</div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-calendar-day extra-lightText"></i> 21 Nov 2020 at 10:32 AM</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-clock extra-lightText"></i> 5 Hours left</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-map extra-lightText"></i> 23KM</div></div></div><div class="shipment-item"><div class="small-text semiBold">Shipment No <span class="primaryColor bold-text text-margin-left">6547</span> <span class="pill extra-small-text text-margin-left">Enroute to Destination</span></div><div class="pickup-dropoff-location"><div class="location-info"><div class="extra-small-text lightText">Pickup Location</div><div class="text semiBold location-address">Jindal Saw Gulf LLC Border Line</div></div><div class="location-diff-line"><img src="assets/images/location-line-hor.svg" alt="Location Line"/></div><div class="location-info"><div class="extra-small-text lightText">Dropoff Location</div><div class="text semiBold location-address">Saudi Arabia Cost Border Line</div></div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-user-tie extra-lightText"></i> 05</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-money-bill-wave extra-lightText"></i> AED 15,000</div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-calendar-day extra-lightText"></i> 21 Nov 2020 at 10:32 AM</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-clock extra-lightText"></i> 5 Hours left</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-map extra-lightText"></i> 23KM</div></div></div><div class="shipment-item"><div class="small-text semiBold">Shipment No <span class="primaryColor bold-text text-margin-left">6547</span> <span class="pill extra-small-text text-margin-left">Loading</span></div><div class="pickup-dropoff-location"><div class="location-info"><div class="extra-small-text lightText">Pickup Location</div><div class="text semiBold location-address">Jindal Saw Gulf LLC</div></div><div class="location-diff-line"><img src="assets/images/location-line-hor.svg" alt="Location Line"/></div><div class="location-info"><div class="extra-small-text lightText">Dropoff Location</div><div class="text semiBold location-address">Kuwait</div></div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-user-tie extra-lightText"></i> 05</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-money-bill-wave extra-lightText"></i> AED 15,000</div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-calendar-day extra-lightText"></i> 21 Nov 2020 at 10:32 AM</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-clock extra-lightText"></i> 5 Hours left</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-map extra-lightText"></i> 23KM</div></div></div><div class="shipment-item"><div class="small-text semiBold">Shipment No <span class="primaryColor bold-text text-margin-left">6547</span> <span class="pill extra-small-text text-margin-left">Offloading</span></div><div class="pickup-dropoff-location"><div class="location-info"><div class="extra-small-text lightText">Pickup Location</div><div class="text semiBold location-address">Jindal Saw Gulf LLC Border Line</div></div><div class="location-diff-line"><img src="assets/images/location-line-hor.svg" alt="Location Line"/></div><div class="location-info"><div class="extra-small-text lightText">Dropoff Location</div><div class="text semiBold location-address">Saudi Arabia Cost Border Line</div></div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-user-tie extra-lightText"></i> 05</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-money-bill-wave extra-lightText"></i> AED 15,000</div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-calendar-day extra-lightText"></i> 21 Nov 2020 at 10:32 AM</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-clock extra-lightText"></i> 5 Hours left</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-map extra-lightText"></i> 23KM</div></div></div><div class="shipment-item"><div class="small-text semiBold">Shipment No <span class="primaryColor bold-text text-margin-left">6547</span> <span class="pill extra-small-text text-margin-left">Enroute to loading point</span></div><div class="pickup-dropoff-location"><div class="location-info"><div class="extra-small-text lightText">Pickup Location</div><div class="text semiBold location-address">Jindal Saw Gulf LLC</div></div><div class="location-diff-line"><img src="assets/images/location-line-hor.svg" alt="Location Line"/></div><div class="location-info"><div class="extra-small-text lightText">Dropoff Location</div><div class="text semiBold location-address">Kuwait</div></div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-user-tie extra-lightText"></i> 05</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-money-bill-wave extra-lightText"></i> AED 15,000</div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-calendar-day extra-lightText"></i> 21 Nov 2020 at 10:32 AM</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-clock extra-lightText"></i> 5 Hours left</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-map extra-lightText"></i> 23KM</div></div></div><div class="shipment-item"><div class="small-text semiBold">Shipment No <span class="primaryColor bold-text text-margin-left">6547</span> <span class="pill extra-small-text text-margin-left">Enroute to Destination</span></div><div class="pickup-dropoff-location"><div class="location-info"><div class="extra-small-text lightText">Pickup Location</div><div class="text semiBold location-address">Jindal Saw Gulf LLC Border Line</div></div><div class="location-diff-line"><img src="assets/images/location-line-hor.svg" alt="Location Line"/></div><div class="location-info"><div class="extra-small-text lightText">Dropoff Location</div><div class="text semiBold location-address">Saudi Arabia Cost Border Line</div></div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-user-tie extra-lightText"></i> 05</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-money-bill-wave extra-lightText"></i> AED 15,000</div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-calendar-day extra-lightText"></i> 21 Nov 2020 at 10:32 AM</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-clock extra-lightText"></i> 5 Hours left</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-map extra-lightText"></i> 23KM</div></div></div></div><div id="upcoming-shipments" class="tab-pane" role="tabpanel" aria-labelledby="upcoming-shipments"><div class="shipment-item"><div class="small-text semiBold">Shipment No <span class="primaryColor bold-text text-margin-left">6547</span> <span class="pill extra-small-text text-margin-left">Enroute to loading point</span></div><div class="pickup-dropoff-location"><div class="location-info"><div class="extra-small-text lightText">Pickup Location</div><div class="text semiBold location-address">Jindal Saw Gulf LLC</div></div><div class="location-diff-line"><img src="assets/images/location-line-hor.svg" alt="Location Line"/></div><div class="location-info"><div class="extra-small-text lightText">Dropoff Location</div><div class="text semiBold location-address">Kuwait</div></div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-user-tie extra-lightText"></i> 05</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-money-bill-wave extra-lightText"></i> AED 15,000</div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-calendar-day extra-lightText"></i> 21 Nov 2020 at 10:32 AM</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-clock extra-lightText"></i> 5 Hours left</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-map extra-lightText"></i> 23KM</div></div></div><div class="shipment-item"><div class="small-text semiBold">Shipment No <span class="primaryColor bold-text text-margin-left">6547</span> <span class="pill extra-small-text text-margin-left">Enroute to loading point</span></div><div class="pickup-dropoff-location"><div class="location-info"><div class="extra-small-text lightText">Pickup Location</div><div class="text semiBold location-address">Jindal Saw Gulf LLC Border Line</div></div><div class="location-diff-line"><img src="assets/images/location-line-hor.svg" alt="Location Line"/></div><div class="location-info"><div class="extra-small-text lightText">Dropoff Location</div><div class="text semiBold location-address">Saudi Arabia Cost Border Line</div></div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-user-tie extra-lightText"></i> 05</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-money-bill-wave extra-lightText"></i> AED 15,000</div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-calendar-day extra-lightText"></i> 21 Nov 2020 at 10:32 AM</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-clock extra-lightText"></i> 5 Hours left</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-map extra-lightText"></i> 23KM</div></div></div><div class="shipment-item"><div class="small-text semiBold">Shipment No <span class="primaryColor bold-text text-margin-left">6547</span> <span class="pill extra-small-text text-margin-left">Enroute to loading point</span></div><div class="pickup-dropoff-location"><div class="location-info"><div class="extra-small-text lightText">Pickup Location</div><div class="text semiBold location-address">Jindal Saw Gulf LLC</div></div><div class="location-diff-line"><img src="assets/images/location-line-hor.svg" alt="Location Line"/></div><div class="location-info"><div class="extra-small-text lightText">Dropoff Location</div><div class="text semiBold location-address">Kuwait</div></div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-user-tie extra-lightText"></i> 05</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-money-bill-wave extra-lightText"></i> AED 15,000</div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-calendar-day extra-lightText"></i> 21 Nov 2020 at 10:32 AM</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-clock extra-lightText"></i> 5 Hours left</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-map extra-lightText"></i> 23KM</div></div></div></div><div id="completed-shipments" class="tab-pane" role="tabpanel" aria-labelledby="completed-shipments"><div class="shipment-item"><div class="small-text semiBold">Shipment No <span class="primaryColor bold-text text-margin-left">6547</span> <span class="pill extra-small-text text-margin-left">Enroute to loading point</span></div><div class="pickup-dropoff-location"><div class="location-info"><div class="extra-small-text lightText">Pickup Location</div><div class="text semiBold location-address">Jindal Saw Gulf LLC</div></div><div class="location-diff-line"><img src="assets/images/location-line-hor.svg" alt="Location Line"/></div><div class="location-info"><div class="extra-small-text lightText">Dropoff Location</div><div class="text semiBold location-address">Kuwait</div></div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-user-tie extra-lightText"></i> 05</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-money-bill-wave extra-lightText"></i> AED 15,000</div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-calendar-day extra-lightText"></i> 21 Nov 2020 at 10:32 AM</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-clock extra-lightText"></i> 5 Hours left</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-map extra-lightText"></i> 23KM</div></div></div><div class="shipment-item"><div class="small-text semiBold">Shipment No <span class="primaryColor bold-text text-margin-left">6547</span> <span class="pill extra-small-text text-margin-left">Enroute to loading point</span></div><div class="pickup-dropoff-location"><div class="location-info"><div class="extra-small-text lightText">Pickup Location</div><div class="text semiBold location-address">Jindal Saw Gulf LLC Border Line</div></div><div class="location-diff-line"><img src="assets/images/location-line-hor.svg" alt="Location Line"/></div><div class="location-info"><div class="extra-small-text lightText">Dropoff Location</div><div class="text semiBold location-address">Saudi Arabia Cost Border Line</div></div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-user-tie extra-lightText"></i> 05</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-money-bill-wave extra-lightText"></i> AED 15,000</div></div><div class="shipment-info"><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-calendar-day extra-lightText"></i> 21 Nov 2020 at 10:32 AM</div><div class="extra-small-text semiBold shipment-info-item"><i class="fas fa-clock extra-lightText"></i> 5 Hours left</div><div class="extra-small-text semiBold shipment-info-item nomargin"><i class="fas fa-map extra-lightText"></i> 23KM</div></div></div></div></div><div class="single-shipment-details-panel-wrapper"><div class="shipment-detail-panel" data-simplebar><div class="close-single-shipment-detail-mobTab" id="close-single-shipment-detail-panel"><i class="far fa-times"></i></div><div class="shipment-driver-wrapper text panel-block"><div class="driver-panel-left"><div class="extra-small-text semiBold darkText">Driver <span class="pill extra-small-text">DXB 57845</span></div><div class="text semiBold"><i class="fas fa-user-tie text primaryColor"></i> Gurtej Singh</div></div><div class="driver-panel-right"><button><i class="fas fa-ballot darkText small-text"></i></button> <button><i class="fas fa-phone-alt darkText small-text"></i></button></div></div><div class="panel-block side-margin"><div class="block-heading small-text darkText semiBold">Status</div><div class="text">On The Way <i class="fas fa-arrow-alt-circle-right primaryColor"></i></div></div><div class="panel-block side-margin with-locat-inf"><div><div class="block-heading small-text darkText semiBold">Pickup Location</div><div class="text semiBold">Jindal Saw LLC</div></div><div><img src="assets/images/location-line.svg" alt="Location Line Diff"></div><div><div class="block-heading small-text darkText semiBold">Pickup Location</div><div class="text semiBold">Kuwait</div></div></div><div class="panel-block side-margin"><div class="block-heading small-text darkText semiBold">Vehicle Information</div><div class="text">15.3m Flatbed</div></div><div class="panel-block side-margin"><div class="block-heading small-text darkText semiBold">No.of Vehicles</div><div class="text">01</div></div><div class="panel-block side-margin"><div class="block-heading small-text darkText semiBold">Departure Date</div><div class="text">21 Nov 2020 at 10:32 AM</div></div><div class="panel-block side-margin"><div class="block-heading small-text darkText semiBold">Arrival Date</div><div class="text">23 Nov 2020 at 10:32 AM</div></div><div class="panel-block side-margin"><div class="block-heading small-text darkText semiBold">KM Left</div><div class="text">23 Km</div></div><div class="panel-block shipment-amount-block side-margin"><div><div class="small-text darkText semiBold">Shipment No</div><div class="primaryColor bold-text heading-text">6547</div></div><div><div class="small-text darkText semiBold">Total Price</div><div class="bold-text heading-text">AED 25000</div></div></div><button class="close-single-shipment-detail" id="close-single-shipment-detail-panel2"><i class="far fa-times"></i></button> <button class="download-single-shipment-detail"><i class="far fa-download"></i></button></div></div></div><div class="shipments-map"><div id="googleMap"></div></div><div class="dashboard-filter-panel"><div class="heading-text semiBold">Filters</div><div class="dashboard-filter-form"><div class="row"><div class="custom-filter-col dashboard-filter-location-col"><div class="label small-text semiBold">Search by Location</div><div class="dashboard-filter-formfield mdc-select mdc-select--outlined"><div class="mdc-select__anchor" aria-labelledby="outlined-select-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span id="outlined-select-label" class="mdc-floating-label small-text">From</span> </span><span class="mdc-notched-outline__trailing"></span> </span><span class="mdc-select__selected-text-container"><span id="demo-selected-text" class="mdc-select__selected-text small-text"></span> </span><span class="mdc-select__dropdown-icon"><svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false"><polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon><polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon></svg></span></div><div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"><ul class="mdc-list"><li class="mdc-list-item" data-value="karachi"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Karachi, Pakistan</span></li><li class="mdc-list-item" data-value="doha"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Doha, Qatar</span></li><li class="mdc-list-item" data-value="dubai"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Dubai, UAE</span></li></ul></div></div><div class="dashboard-filter-formfield mdc-select mdc-select--outlined"><div class="mdc-select__anchor" aria-labelledby="outlined-select-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span id="outlined-select-label" class="mdc-floating-label small-text">To</span> </span><span class="mdc-notched-outline__trailing"></span> </span><span class="mdc-select__selected-text-container"><span id="demo-selected-text" class="mdc-select__selected-text small-text"></span> </span><span class="mdc-select__dropdown-icon"><svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false"><polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon><polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon></svg></span></div><div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"><ul class="mdc-list"><li class="mdc-list-item" data-value="karachi"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Karachi, Pakistan</span></li><li class="mdc-list-item" data-value="doha"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Doha, Qatar</span></li><li class="mdc-list-item" data-value="dubai"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Dubai, UAE</span></li></ul></div></div></div><div class="custom-filter-col"><div class="label small-text semiBold">Date & Time Range</div><div class="dashboard-filter-formfield"><label class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label nomargin"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__trailing"></span> </span><i class="far fa-calendar mdc-text-field__icon mdc-text-field__icon--leading small-text" tabindex="0" role="button"></i> <input class="mdc-text-field__input small-text" name="daterange" aria-label="Label" placeholder="Select Date Range"></label></div><div class="dashboard-filter-formfield duration-picker-btns"><div class="block-btn small border dashboard-filter-btn raisedHover" id="dashboard-filter-today">Today</div><div class="block-btn small border dashboard-filter-btn raisedHover" id="dashboard-filter-lastweek">Last 7 Days</div><div class="block-btn small border active dashboard-filter-btn raisedHover" id="dashboard-filter-thismonth">This Month</div></div></div><div class="custom-filter-col"><div class="label small-text semiBold">Select Vehicle Type</div><div class="dashboard-filter-formfield mdc-select mdc-select--outlined"><div class="mdc-select__anchor" aria-labelledby="outlined-select-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span id="outlined-select-label" class="mdc-floating-label small-text">Vehicle Type</span> </span><span class="mdc-notched-outline__trailing"></span> </span><span class="mdc-select__selected-text-container"><span id="demo-selected-text" class="mdc-select__selected-text small-text"></span> </span><span class="mdc-select__dropdown-icon"><svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false"><polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon><polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon></svg></span></div><div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"><ul class="mdc-list"><li class="mdc-list-item" data-value="truck"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Truck</span></li><li class="mdc-list-item" data-value="mazda"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Mazda</span></li><li class="mdc-list-item" data-value="bus"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Bus</span></li></ul></div></div></div><div class="custom-filter-col"><div class="label small-text semiBold">Select Movement Type</div><div class="dashboard-filter-formfield mdc-select mdc-select--outlined"><div class="mdc-select__anchor" aria-labelledby="outlined-select-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span id="outlined-select-label" class="mdc-floating-label small-text">Movement Type</span> </span><span class="mdc-notched-outline__trailing"></span> </span><span class="mdc-select__selected-text-container"><span id="demo-selected-text" class="mdc-select__selected-text small-text"></span> </span><span class="mdc-select__dropdown-icon"><svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false"><polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon><polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon></svg></span></div><div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"><ul class="mdc-list"><li class="mdc-list-item" data-value="intra-city"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Intra City</span></li><li class="mdc-list-item" data-value="inter-city"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Inter City</span></li><li class="mdc-list-item" data-value="cross-border"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Cross Border</span></li></ul></div></div></div><div class="custom-filter-col nomargin"><div class="label small-text semiBold">Select Status</div><div class="dashboard-filter-formfield mdc-select mdc-select--outlined"><div class="mdc-select__anchor" aria-labelledby="outlined-select-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span id="outlined-select-label" class="mdc-floating-label small-text">Status</span> </span><span class="mdc-notched-outline__trailing"></span> </span><span class="mdc-select__selected-text-container"><span id="demo-selected-text" class="mdc-select__selected-text text"></span> </span><span class="mdc-select__dropdown-icon"><svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false"><polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon><polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon></svg></span></div><div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"><ul class="mdc-list"><li class="mdc-list-item" data-value="on-going"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Ongoing</span></li><li class="mdc-list-item" data-value="upcoming"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Upcoming</span></li><li class="mdc-list-item" data-value="completed"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Completed</span></li></ul></div></div></div></div></div><div class="dashboard-filter-actions"><button class="block-btn trans ripple medium" id="discard-custom-filter"><span class="text semiBold">Discard</span></button> <button class="block-btn raised ripple medium" id="apply-filter-dashboard-btn"><span class="text semiBold">Apply</span></button></div></div></div><div class="sidebar-wrapper notifications-sidebar"><div class="overlay d-none"></div><div class="details-panel openSmall"><div class="sidebar-top"><div class="main-heading sidebar-padding">Notifications <button class="refresh-notifications"><i class="far fa-redo-alt extra-lightText"></i></button></div><div class="notifications-wrapper sidebar-padding" data-simplebar><div class="notification-time text semiBold darkText">Today</div><div class="notification-item new-notification"><div class="text">Shipment no <span class="primaryColor bold-text">8751</span> - Vehicle (JY-8177) is unloading cargo at delivery location</div><div class="small-text extra-lightText">25 mins ago</div></div><div class="notification-item"><div class="text">Shipment no <span class="primaryColor bold-text">8751</span> - Vehicle (JY-8177) is unloading cargo at delivery location</div><div class="small-text extra-lightText">1 hour ago</div></div><div class="notification-time text semiBold darkText">Past</div><div class="notification-item"><div class="text">Shipment no <span class="primaryColor bold-text">8751</span> - Vehicle (JY-8177) is unloading cargo at delivery location</div><div class="small-text extra-lightText">22 Jan, 2020 , 10:53 am</div></div><div class="notification-item"><div class="text">Shipment no <span class="primaryColor bold-text">8751</span> - Vehicle (JY-8177) is unloading cargo at delivery location</div><div class="small-text extra-lightText">20 Jan, 2020 , 08:00 pm</div></div></div></div><div class="sidebar-bottom"><button class="heading-text extra-lightText">Clear All</button></div><div id="mobile-tablet-close-sidebar-btn"><i class="far fa-times"></i></div></div></div><div class="sidebar-wrapper new-shipment-sidebar"><div class="overlay d-none"></div><div class="details-panel"><div class="sidebar-top"><div class="main-heading sidebar-padding">Create New Shipment</div><form class="new-shipment-form"><div class="form-stepper sidebar-padding"><div class="step step-1 active with-step-line"><div class="count-circle text bold-text"><span class="step-no">1</span> <span class="check-icon small-text"><i class="fal fa-check"></i></span></div><div class="label text bold-text">Shipment Details</div><div class="step-line"></div></div><div class="step step-2 with-step-line"><div class="count-circle text bold-text"><span class="step-no">2</span> <span class="check-icon small-text"><i class="fal fa-check"></i></span></div><div class="label text bold-text">Select Vehicle</div><div class="step-line"></div></div><div class="step step-3"><div class="count-circle text bold-text"><span class="step-no">3</span> <span class="check-icon small-text"><i class="far fa-check"></i></span></div><div class="label text bold-text">Review</div></div></div><div class="form-wrapper step-1-form sidebar-padding" data-simplebar><div class="sub-heading text bold-text">info</div><div class="ship-form-field-wrap"><label class="custom-field mdc-text-field mdc-text-field--outlined"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span class="mdc-floating-label text" id="my-label-id">Pickup Address</span> </span><span class="mdc-notched-outline__trailing"></span> </span><input class="mdc-text-field__input text" aria-labelledby="my-label-id"></label></div><div class="ship-form-field-wrap"><label class="custom-field mdc-text-field mdc-text-field--outlined"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span class="mdc-floating-label text" id="my-label-id">Dropoff Address</span> </span><span class="mdc-notched-outline__trailing"></span> </span><input class="mdc-text-field__input text" aria-labelledby="my-label-id"></label></div><div class="ship-form-field-wrap row"><div class="custom-col col-lg-6 padding-right"><label class="custom-field mdc-text-field mdc-text-field--outlined mdc-text-field--no-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__trailing"></span> </span><i class="far fa-calendar mdc-text-field__icon mdc-text-field__icon--leading text" tabindex="0" role="button"></i> <input class="mdc-text-field__input text" name="singledate" aria-label="Label" placeholder="Pickup Date"></label></div><div class="custom-col col-lg-6 padding-left"><label class="custom-field mdc-text-field mdc-text-field--outlined mdc-text-field--no-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__trailing"></span> </span><i class="far fa-clock mdc-text-field__icon mdc-text-field__icon--leading text" tabindex="0" role="button"></i> <input class="mdc-text-field__input text" name="timepicker" aria-label="Label" placeholder="Pickup Time"></label></div></div><div class="ship-form-field-wrap"><label class="custom-field mdc-text-field mdc-text-field--outlined"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span class="mdc-floating-label text" id="my-label-id">Loading/Unloading Free hours</span> </span><span class="mdc-notched-outline__trailing"></span> </span><input class="mdc-text-field__input text" aria-labelledby="my-label-id"></label></div><div class="ship-form-field-wrap"><div class="mdc-select mdc-select--outlined"><div class="mdc-select__anchor" aria-labelledby="outlined-select-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span id="outlined-select-label" class="mdc-floating-label text">Cargo Packaging</span> </span><span class="mdc-notched-outline__trailing"></span> </span><span class="mdc-select__selected-text-container"><span id="demo-selected-text" class="mdc-select__selected-text text"></span> </span><span class="mdc-select__dropdown-icon"><svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false"><polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon><polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon></svg></span></div><div class="mdc-select__menu mdc-select__menu-above mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"><ul class="mdc-list"><li class="mdc-list-item" data-value="boxes"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Boxes</span></li><li class="mdc-list-item" data-value="bricks"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Bricks</span></li><li class="mdc-list-item" data-value="container"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Container</span></li><li class="mdc-list-item" data-value="boxes"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Boxes</span></li><li class="mdc-list-item" data-value="bricks"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Bricks</span></li><li class="mdc-list-item" data-value="container"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Container</span></li><li class="mdc-list-item" data-value="boxes"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Boxes</span></li><li class="mdc-list-item" data-value="bricks"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Bricks</span></li><li class="mdc-list-item" data-value="container"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Container</span></li><li class="mdc-list-item" data-value="boxes"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Boxes</span></li><li class="mdc-list-item" data-value="bricks"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Bricks</span></li><li class="mdc-list-item" data-value="container"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Container</span></li><li class="mdc-list-item" data-value="boxes"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Boxes</span></li><li class="mdc-list-item" data-value="bricks"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Bricks</span></li><li class="mdc-list-item" data-value="container"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Container</span></li><li class="mdc-list-item" data-value="boxes"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Boxes</span></li><li class="mdc-list-item" data-value="bricks"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Bricks</span></li><li class="mdc-list-item" data-value="container"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Container</span></li></ul></div></div></div><div class="ship-form-field-wrap"><div class="mdc-select mdc-select--outlined"><div class="mdc-select__anchor" aria-labelledby="outlined-select-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span id="outlined-select-label" class="mdc-floating-label text">Cargo Weight(Tons)</span> </span><span class="mdc-notched-outline__trailing"></span> </span><span class="mdc-select__selected-text-container"><span id="demo-selected-text" class="mdc-select__selected-text text"></span> </span><span class="mdc-select__dropdown-icon"><svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false"><polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon><polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon></svg></span></div><div class="mdc-select__menu mdc-select__menu-above mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"><ul class="mdc-list"><li class="mdc-list-item" data-value="1-ton"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">1 Ton</span></li><li class="mdc-list-item" data-value="2-tons"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">2 Tons</span></li><li class="mdc-list-item" data-value="3-tons"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">3 Tons</span></li></ul></div></div></div><div class="ship-form-field-wrap"><label class="custom-textarea-field mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--no-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span class="mdc-floating-label text" id="my-label-id">Cargo Description</span> </span><span class="mdc-notched-outline__trailing"></span> </span><span class="mdc-text-field__resizer"><textarea class="mdc-text-field__input text" rows="3" aria-label="Label"></textarea></span></label></div></div><div class="form-wrapper step-2-form sidebar-padding d-none" data-simplebar><div class="sub-heading text bold-text">info</div><div class="ship-form-field-wrap"><div class="mdc-select mdc-select--outlined"><div class="mdc-select__anchor" aria-labelledby="outlined-select-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span id="outlined-select-label" class="mdc-floating-label text">No of Vehicles</span> </span><span class="mdc-notched-outline__trailing"></span> </span><span class="mdc-select__selected-text-container"><span id="demo-selected-text" class="mdc-select__selected-text text"></span> </span><span class="mdc-select__dropdown-icon"><svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false"><polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon><polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon></svg></span></div><div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"><ul class="mdc-list"><li class="mdc-list-item" data-value="4"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">4</span></li><li class="mdc-list-item" data-value="5"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">5</span></li><li class="mdc-list-item" data-value="6"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">6</span></li></ul></div></div></div><div class="ship-form-field-wrap"><div class="mdc-select mdc-select--outlined"><div class="mdc-select__anchor" aria-labelledby="outlined-select-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span id="outlined-select-label" class="mdc-floating-label text">Vehicle Type</span> </span><span class="mdc-notched-outline__trailing"></span> </span><span class="mdc-select__selected-text-container"><span id="demo-selected-text" class="mdc-select__selected-text text"></span> </span><span class="mdc-select__dropdown-icon"><svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false"><polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon><polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon></svg></span></div><div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"><ul class="mdc-list"><li class="mdc-list-item" data-value="truck"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Truck</span></li><li class="mdc-list-item" data-value="mazda"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Mazda</span></li><li class="mdc-list-item" data-value="truck-flatbed"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Truck Flatbed</span></li></ul></div></div></div><div class="custom-field mdc-select mdc-select--outlined"><div class="mdc-select__anchor" aria-labelledby="outlined-select-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span id="outlined-select-label" class="mdc-floating-label text">Vehicle Sub Type</span> </span><span class="mdc-notched-outline__trailing"></span> </span><span class="mdc-select__selected-text-container"><span id="demo-selected-text" class="mdc-select__selected-text text"></span> </span><span class="mdc-select__dropdown-icon"><svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false"><polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon><polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon></svg></span></div><div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"><ul class="mdc-list"><li class="mdc-list-item" data-value="flatbed"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Flatbed</span></li><li class="mdc-list-item" data-value="22-wheeler"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">22 Wheeler</span></li><li class="mdc-list-item" data-value="16-wheeler"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">16 Wheeler</span></li></ul></div></div><div class="ship-vehicle-images-wrap"><div class="vehicle-img"><img src="assets/images/truck1.jpg" alt="Vehicle Image"/></div><div class="vehicle-img"><img src="assets/images/truck2.jpg" alt="Vehicle Image"/></div><div class="vehicle-img"><img src="assets/images/truck3.jpg" alt="Vehicle Image"/></div><div class="vehicle-img"><img src="assets/images/truck4.jpg" alt="Vehicle Image"/></div><div class="vehicle-img"><img src="assets/images/truck5.jpg" alt="Vehicle Image"/></div><div class="vehicle-img"><img src="assets/images/truck6.jpg" alt="Vehicle Image"/></div><div class="vehicle-img"><img src="assets/images/truck7.jpg" alt="Vehicle Image"/></div><div class="vehicle-img"><img src="assets/images/truck8.jpg" alt="Vehicle Image"/></div><div class="vehicle-img"><img src="assets/images/truck3.jpg" alt="Vehicle Image"/></div><div class="vehicle-img"><img src="assets/images/truck1.jpg" alt="Vehicle Image"/></div></div></div><div class="form-wrapper step-3-form sidebar-padding d-none" data-simplebar><div class="sub-heading text bold-text">Review the information</div><div class="shipment-review-item"><div class="left-content text lightText semiBold">Pickup Address</div><div class="right-content text bold-text">Jinnah Airport, Karachi</div></div><div class="shipment-review-item"><div class="left-content text lightText semiBold">Dropoff Address</div><div class="right-content text bold-text">Iqbal Airport, Lahore</div></div><div class="shipment-review-item"><div class="left-content text lightText semiBold">Date and Time</div><div class="right-content text bold-text">11:30 AM on 20 Nov, 2020</div></div><div class="shipment-review-item"><div class="left-content text lightText semiBold">Loading Time</div><div class="right-content text bold-text">11:30 AM</div></div><div class="shipment-review-item"><div class="left-content text lightText semiBold">Cargo Packaging</div><div class="right-content text bold-text">Boxes</div></div><div class="shipment-review-item"><div class="left-content text lightText semiBold">Cargo Weight</div><div class="right-content text bold-text">10 Tons</div></div><div class="shipment-review-item"><div class="left-content text lightText semiBold">Vehicle Type</div><div class="right-content text bold-text">15.3m Flatbed</div></div><div class="shipment-review-item"><div class="left-content text lightText semiBold">No of Vehicle</div><div class="right-content text bold-text">04</div></div><div class="shipment-review-item no-border"><div class="left-content text lightText semiBold">Description</div><div class="right-content text bold-text">10 Tons of Boxes to be shipped on the given address.</div></div></div></form></div><div class="sidebar-bottom sidebar-padding"><button class="block-btn medium trans ripple text" id="cancel-newshipment-creation-btn">Cancel</button><div class="sidebar-btm-btnsGrp row nomargin"><button class="block-btn trans medium ripple text d-none" id="new-shipment-back-btn">Back</button> <button class="block-btn raised medium ripple text" id="new-shipment-next-btn">Next</button> <button class="block-btn raised medium ripple text d-none" id="new-shipment-finish-btn">Finish</button></div></div></div></div><div class="sidebar-wrapper currency-converter-sidebar"><div class="overlay d-none"></div><div class="details-panel openSmall"><div class="sidebar-top"><div class="main-heading sidebar-padding">Currency Converter</div><form class="currency-converter-form"><div class="form-wrapper step-1-form sidebar-padding"><div class="custom-col col-lg-12"><label class="custom-field mdc-text-field mdc-text-field--outlined"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__trailing"></span> </span><input value="1000" class="mdc-text-field__input text" aria-labelledby="my-label-id"></label></div><div class="custom-col col-lg-12 mdc-select mdc-select--outlined"><div class="mdc-select__anchor" aria-labelledby="outlined-select-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__trailing"></span> </span><span class="mdc-select__selected-text-container"><span id="demo-selected-text" class="mdc-select__selected-text text"></span> </span><span class="mdc-select__dropdown-icon"><svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false"><polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon><polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon></svg></span></div><div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"><ul class="mdc-list"><li class="mdc-list-item mdc-list-item--selected" data-value="pkr"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Pakistani Rupee</span></li><li class="mdc-list-item" data-value="uae-dirham"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">UAE Dirham</span></li><li class="mdc-list-item" data-value="container"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Indian Rupee</span></li></ul></div></div><div class="section-gap"></div><div class="custom-col col-lg-12"><label class="custom-field mdc-text-field mdc-text-field--outlined"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__trailing"></span> </span><input value="22.90" class="mdc-text-field__input text" aria-labelledby="my-label-id"></label></div><div class="custom-col col-lg-12 mdc-select mdc-select--outlined"><div class="mdc-select__anchor" aria-labelledby="outlined-select-label"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__trailing"></span> </span><span class="mdc-select__selected-text-container"><span id="demo-selected-text" class="mdc-select__selected-text text"></span> </span><span class="mdc-select__dropdown-icon"><svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5" focusable="false"><polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon><polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon></svg></span></div><div class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"><ul class="mdc-list"><li class="mdc-list-item" data-value="pkr"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Pakistani Rupee</span></li><li class="mdc-list-item mdc-list-item--selected" data-value="uae-dirham"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">UAE Dirham</span></li><li class="mdc-list-item" data-value="container"><span class="mdc-list-item__ripple"></span> <span class="mdc-list-item__text text">Indian Rupee</span></li></ul></div></div><div class="currency-convert-btn-wrap"><button class="block-btn medium raised ripple text">Convert</button></div></div></form></div><div class="sidebar-bottom sidebar-padding"><button class="block-btn medium trans ripple text" id="cancel-currency-converter-btn">Cancel</button></div></div></div><div class="profile-settings-popup"><div class="overlay d-none"></div><div class="profile-settings-panel"><section class="profile-settings" data-simplebar><div class="panel-heading text semiBold"><i class="fas fa-user primaryColor"></i> Account Settings</div><div class="prf-sett-section info-section"><div class="avatar extralarge no-border"><img src="assets/images/user1.jpg" alt="User Profile Picture"/></div><div class="details"><div class="bold-text website-name">Lorryz.com</div><div class="user-info"><div class="email_address text">lorryz@gmail.com</div><span class="separator">|</span><div class="phone_number text">+97 213 451254</div></div></div></div><div class="prf-sett-section"><div class="row"><div class="custom-col col-lg-6 padding-right"><label class="custom-field mdc-text-field mdc-text-field--outlined mdc-text-field--label-floating mdc-text-field--disabled nomargin"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span class="mdc-floating-label mdc-floating-label--float-above text" id="my-label-id">Email Address</span> </span><span class="mdc-notched-outline__trailing"></span> </span><input class="mdc-text-field__input text" aria-labelledby="my-label-id" value="lorryz@gmail.com" disabled="disabled"></label></div><div class="custom-col col-lg-6 padding-left noMargin-mobile-tab"><label class="custom-field mdc-text-field mdc-text-field--outlined mdc-text-field--label-floating mdc-text-field--disabled nomargin"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span class="mdc-floating-label mdc-floating-label--float-above text" id="my-label-id">Mobile Number</span> </span><span class="mdc-notched-outline__trailing"></span> </span><input class="mdc-text-field__input text" aria-labelledby="my-label-id" value="+97 213 451254" disabled="disabled"></label></div></div></div><div class="prf-sett-section no-border"><div class="chang-psd-heading text semiBold">Change Password</div><div class="row"><div class="custom-col col-lg-6 padding-right"><label class="custom-field mdc-text-field mdc-text-field--outlined mdc-text-field--label-floating nomargin"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span class="mdc-floating-label mdc-floating-label--float-above text" id="my-label-id">Old Password</span> </span><span class="mdc-notched-outline__trailing"></span> </span><input type="password" class="mdc-text-field__input text" aria-labelledby="my-label-id" value="lorryz@gmail.com"> <i class="far fa-eye mdc-text-field__icon mdc-text-field__icon--trailing showPassword" tabindex="0" role="button"></i></label></div><div class="custom-col col-lg-6 padding-left noMargin-mobile-tab"><label class="custom-field mdc-text-field mdc-text-field--outlined nomargin"><span class="mdc-notched-outline"><span class="mdc-notched-outline__leading"></span> <span class="mdc-notched-outline__notch"><span class="mdc-floating-label text" id="my-label-id">New Password</span> </span><span class="mdc-notched-outline__trailing"></span> </span><input type="password" class="mdc-text-field__input text" aria-labelledby="my-label-id"> <i class="far fa-eye mdc-text-field__icon mdc-text-field__icon--trailing showPassword" tabindex="0" role="button"></i></label></div></div></div></section><section class="profile-settings-actions"><button class="block-btn medium trans text ripple" id="cancel-profile-settings-panel">Cancel</button> <button class="block-btn medium raised text ripple" id="save-profile-settings-changes">Save Changes</button></section></div></div><div class="tablet-mobile-sidebar-menu"><div class="upper-section"><div class="close-tablet-menu" id="close-tablet-mobile-sidebar"><i class="fal fa-times"></i></div><div class="menu-items-wrapper"><a class="menu-item" href="dashboard.html">Dashboard </a><a class="menu-item" href="shipments.html">Shipments </a><a class="menu-item" id="profile-settings-btn-mobile-tab">Settings</a></div></div><div class="bottom-section"><div class="user-details-tablet-menu"><div class="avatar medium"><img src="assets/images/user1.jpg" alt="User Image"/></div><div class="mobile-menu-user-info"><div class="heading-text semiBold">Hassan Rana</div><div class="small-text lightText">hassanrana@gmail.com</div></div></div><div class="tablet-menu-logout-btn text"><i class="far fa-sign-out-alt"></i> Log Out</div></div></div><div class="loader-wrapper d-none"><div class="truck-wrapper"><div class="truck"><div class="truck-container"></div><div class="glases"></div><div class="bonet"></div><div class="base"></div><div class="base-aux"></div><div class="wheel-back"></div><div class="wheel-front"></div><div class="smoke"></div></div></div></div><div class="create-new-shipments-fabBtn"><button class="iconButton medium" id="new-shipment-fab-btn"><i class="far fa-plus"></i></button></div><div class="snack-bar-wrapper d-none"><div class="snack-bar-msg-wrapper text"></div><button class="close-snack-bar"><i class="far fa-times"></i></button></div><script src="assets/js/plugins/simplebar.js"></script><script src="assets/js/shipments.js"></script><script src="assets/js/common.js"></script><script>function myMap() {
-            var mapProp = {
-                center: new google.maps.LatLng(24.832400, 67.080947),
-                zoom: 15,
-            };
-            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-        }</script><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjnIUWZkHBulqyLu1W8W9XaqnP8ApiRLQ&callback=myMap"></script><script src="assets/js/plugins/bootstrap.min.js"></script><script src="assets/js/plugins/moment.min.js"></script><script src="assets/js/plugins/daterangepicker.min.js"></script><script src="assets/js/plugins/mdtimepicker.js"></script><script src="assets/js/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>"Your Company" - Shipments</title>
+    <link href="assets/icons/all.css" rel="stylesheet" />
+    <link href="assets/css/shipments.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/plugins/simplebar.css" />
+    <script src="assets/js/plugins/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/daterangepicker.css" />
+    <link rel="stylesheet" href="assets/css/plugins/mdtimepicker.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="topbar-inner-wrapper">
+        <div class="topbar-left">
+          <div class="tablet-mobile-menu-btn" id="menu-btn-tab-mobile">
+            <i class="far fa-bars"></i>
+          </div>
+          <div class="company-logo">
+            <a href="/">
+              <img src="assets/images/lorryz-logo.png" alt=""Your Company" Logo"
+              />
+            </a>
+          </div>
+          <button class="rounded-btn text" id="new-shipment-btn">
+            New Shipment
+          </button>
+          <a href="dashboard.html" class="page-nav-link text">Dashboard </a
+          ><a href="shipments.html" class="page-nav-link text active"
+            >Shipments</a
+          >
+        </div>
+        <div class="topbar-right">
+          <button class="iconButton small" id="currency-converter-btn">
+            <i class="far fa-money-bill-wave"></i>
+          </button>
+          <button class="iconButton small" id="notifications-btn">
+            <i class="far fa-bell"></i>
+            <div class="count">6</div>
+          </button>
+          <div class="overlay d-none"></div>
+          <div class="user-details">
+            <div class="greet">Welcome</div>
+            <div class="user-name">John Doe</div>
+          </div>
+          <div class="profileWrapper">
+            <div class="avatar medium" id="user-avatar-btn">
+              <img src="assets/images/user.jpg" alt="User Image" />
+            </div>
+            <div class="user-profile-dropdown">
+              <div class="menu-item" id="profile-settings-btn">
+                <i class="far fa-cog"></i>Settings
+              </div>
+              <div class="menu-item">
+                <i class="far fa-sign-out-alt"></i>Log Out
+              </div>
+              <div class="pointer"><i class="fas fa-triangle"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="contentSection" id="shipments-content">
+      <div class="shipments-list">
+        <div class="shipments-search-bar">
+          <div class="searchbar-wrapper">
+            <i class="far fa-search text"></i>
+            <input
+              class="small-text searchbar"
+              placeholder="Search for name and number..."
+            />
+          </div>
+          <button id="dashboard-custom-filter-btn">
+            <i class="far fa-filter text"></i>
+          </button>
+        </div>
+        <div class="applied-filters-section d-none marginLeft">
+          <div class="dropdown-wrapper">
+            <button class="dropdown-btn small-text">3 filters applied</button>
+            <div class="dropdown-menu-wrapper">
+              <div class="dropdown-item-wrapper text">
+                <div class="dropdown-item-label">Date</div>
+                <div class="dropdown-item-action">
+                  <i class="far fa-times"></i>
+                </div>
+              </div>
+              <div class="dropdown-item-wrapper text">
+                <div class="dropdown-item-label">Location</div>
+                <div class="dropdown-item-action">
+                  <i class="far fa-times"></i>
+                </div>
+              </div>
+              <div class="dropdown-item-wrapper text">
+                <div class="dropdown-item-label">Vehicle Type</div>
+                <div class="dropdown-item-action">
+                  <i class="far fa-times"></i>
+                </div>
+              </div>
+              <div class="dropdown-item-wrapper text">
+                <div class="dropdown-item-label">Status</div>
+                <div class="dropdown-item-action">
+                  <i class="far fa-times"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="primaryColor small-text"
+            href="javascript:;"
+            id="clear-dashboard-applied-filters"
+            >Clear Filter</a
+          >
+        </div>
+        <ul
+          class="shipments-tabs tabs nav nav-tabs show"
+          role="tablist"
+          id="myTab"
+        >
+          <li class="tab nav-item">
+            <div
+              class="nav-link active"
+              id="ongoing-shipments-tab"
+              data-toggle="tab"
+              href="#ongoing-shipments"
+              role="tab"
+              aria-controls="ongoing-shipments"
+              aria-selected="false"
+            >
+              <div class="tab-heading text lightText">Ongoing</div>
+            </div>
+          </li>
+          <li class="tab nav-item">
+            <div
+              class="nav-link"
+              id="upcoming-shipments-tab"
+              data-toggle="tab"
+              href="#upcoming-shipments"
+              role="tab"
+              aria-controls="upcoming-shipments"
+              aria-selected="true"
+            >
+              <div class="tab-heading text lightText">Upcoming</div>
+            </div>
+          </li>
+          <li class="tab nav-item">
+            <div
+              class="nav-link"
+              id="completed-shipments-tab"
+              data-toggle="tab"
+              href="#completed-shipments"
+              role="tab"
+              aria-controls="completed-shipments"
+              aria-selected="true"
+            >
+              <div class="tab-heading text lightText">Completed</div>
+            </div>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div
+            id="ongoing-shipments"
+            class="tab-pane active"
+            role="tabpanel"
+            aria-labelledby="ongoing-shipments"
+            data-simplebar
+          >
+            <div class="shipment-item">
+              <div class="small-text semiBold">
+                Shipment No
+                <span class="primaryColor bold-text text-margin-left"
+                  >6547</span
+                >
+                <span class="pill extra-small-text text-margin-left"
+                  >Enroute to loading point</span
+                >
+              </div>
+              <div class="pickup-dropoff-location">
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Pickup Location</div>
+                  <div class="text semiBold location-address">New York</div>
+                </div>
+                <div class="location-diff-line">
+                  <img
+                    src="assets/images/location-line-hor.svg"
+                    alt="Location Line"
+                  />
+                </div>
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Dropoff Location</div>
+                  <div class="text semiBold location-address">Orlando</div>
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-user-tie extra-lightText"></i> 05
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-money-bill-wave extra-lightText"></i> USD
+                  15,000
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-calendar-day extra-lightText"></i> 21 Nov
+                  2020 at 10:32 AM
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-clock extra-lightText"></i> 5 Hours left
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-map extra-lightText"></i> 23KM
+                </div>
+              </div>
+            </div>
+            <div class="shipment-item">
+              <div class="small-text semiBold">
+                Shipment No
+                <span class="primaryColor bold-text text-margin-left"
+                  >6547</span
+                >
+                <span class="pill extra-small-text text-margin-left"
+                  >Enroute to Destination</span
+                >
+              </div>
+              <div class="pickup-dropoff-location">
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Pickup Location</div>
+                  <div class="text semiBold location-address">
+                    Los Angeles
+                  </div>
+                </div>
+                <div class="location-diff-line">
+                  <img
+                    src="assets/images/location-line-hor.svg"
+                    alt="Location Line"
+                  />
+                </div>
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Dropoff Location</div>
+                  <div class="text semiBold location-address">
+                    San Jose
+                  </div>
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-user-tie extra-lightText"></i> 05
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-money-bill-wave extra-lightText"></i> USD
+                  15,000
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-calendar-day extra-lightText"></i> 21 Nov
+                  2020 at 10:32 AM
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-clock extra-lightText"></i> 5 Hours left
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-map extra-lightText"></i> 23KM
+                </div>
+              </div>
+            </div>
+            <div class="shipment-item">
+              <div class="small-text semiBold">
+                Shipment No
+                <span class="primaryColor bold-text text-margin-left"
+                  >6547</span
+                >
+                <span class="pill extra-small-text text-margin-left"
+                  >Loading</span
+                >
+              </div>
+              <div class="pickup-dropoff-location">
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Pickup Location</div>
+                  <div class="text semiBold location-address">
+                    Washington DC
+                  </div>
+                </div>
+                <div class="location-diff-line">
+                  <img
+                    src="assets/images/location-line-hor.svg"
+                    alt="Location Line"
+                  />
+                </div>
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Dropoff Location</div>
+                  <div class="text semiBold location-address">Austin</div>
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-user-tie extra-lightText"></i> 05
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-money-bill-wave extra-lightText"></i> USD
+                  15,000
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-calendar-day extra-lightText"></i> 21 Nov
+                  2020 at 10:32 AM
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-clock extra-lightText"></i> 5 Hours left
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-map extra-lightText"></i> 23KM
+                </div>
+              </div>
+            </div>
+            <div class="shipment-item">
+              <div class="small-text semiBold">
+                Shipment No
+                <span class="primaryColor bold-text text-margin-left"
+                  >6547</span
+                >
+                <span class="pill extra-small-text text-margin-left"
+                  >Offloading</span
+                >
+              </div>
+              <div class="pickup-dropoff-location">
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Pickup Location</div>
+                  <div class="text semiBold location-address">
+                    New York
+                  </div>
+                </div>
+                <div class="location-diff-line">
+                  <img
+                    src="assets/images/location-line-hor.svg"
+                    alt="Location Line"
+                  />
+                </div>
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Dropoff Location</div>
+                  <div class="text semiBold location-address">
+                    San Diego
+                  </div>
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-user-tie extra-lightText"></i> 05
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-money-bill-wave extra-lightText"></i> USD
+                  15,000
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-calendar-day extra-lightText"></i> 21 Nov
+                  2020 at 10:32 AM
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-clock extra-lightText"></i> 5 Hours left
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-map extra-lightText"></i> 23KM
+                </div>
+              </div>
+            </div>
+            <div class="shipment-item">
+              <div class="small-text semiBold">
+                Shipment No
+                <span class="primaryColor bold-text text-margin-left"
+                  >6547</span
+                >
+                <span class="pill extra-small-text text-margin-left"
+                  >Enroute to loading point</span
+                >
+              </div>
+              <div class="pickup-dropoff-location">
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Pickup Location</div>
+                  <div class="text semiBold location-address">
+                    San Francisco
+                  </div>
+                </div>
+                <div class="location-diff-line">
+                  <img
+                    src="assets/images/location-line-hor.svg"
+                    alt="Location Line"
+                  />
+                </div>
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Dropoff Location</div>
+                  <div class="text semiBold location-address">New York</div>
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-user-tie extra-lightText"></i> 05
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-money-bill-wave extra-lightText"></i> USD
+                  15,000
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-calendar-day extra-lightText"></i> 21 Nov
+                  2020 at 10:32 AM
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-clock extra-lightText"></i> 5 Hours left
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-map extra-lightText"></i> 23KM
+                </div>
+              </div>
+            </div>
+            <div class="shipment-item">
+              <div class="small-text semiBold">
+                Shipment No
+                <span class="primaryColor bold-text text-margin-left"
+                  >6547</span
+                >
+                <span class="pill extra-small-text text-margin-left"
+                  >Enroute to Destination</span
+                >
+              </div>
+              <div class="pickup-dropoff-location">
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Pickup Location</div>
+                  <div class="text semiBold location-address">
+                    Chicago
+                  </div>
+                </div>
+                <div class="location-diff-line">
+                  <img
+                    src="assets/images/location-line-hor.svg"
+                    alt="Location Line"
+                  />
+                </div>
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Dropoff Location</div>
+                  <div class="text semiBold location-address">
+                    San Diego
+                  </div>
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-user-tie extra-lightText"></i> 05
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-money-bill-wave extra-lightText"></i> USD
+                  15,000
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-calendar-day extra-lightText"></i> 21 Nov
+                  2020 at 10:32 AM
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-clock extra-lightText"></i> 5 Hours left
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-map extra-lightText"></i> 23KM
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="upcoming-shipments"
+            class="tab-pane"
+            role="tabpanel"
+            aria-labelledby="upcoming-shipments"
+          >
+            <div class="shipment-item">
+              <div class="small-text semiBold">
+                Shipment No
+                <span class="primaryColor bold-text text-margin-left"
+                  >6547</span
+                >
+                <span class="pill extra-small-text text-margin-left"
+                  >Enroute to loading point</span
+                >
+              </div>
+              <div class="pickup-dropoff-location">
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Pickup Location</div>
+                  <div class="text semiBold location-address">
+                    Oklahoma
+                  </div>
+                </div>
+                <div class="location-diff-line">
+                  <img
+                    src="assets/images/location-line-hor.svg"
+                    alt="Location Line"
+                  />
+                </div>
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Dropoff Location</div>
+                  <div class="text semiBold location-address">Chicago</div>
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-user-tie extra-lightText"></i> 05
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-money-bill-wave extra-lightText"></i> USD
+                  15,000
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-calendar-day extra-lightText"></i> 21 Nov
+                  2020 at 10:32 AM
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-clock extra-lightText"></i> 5 Hours left
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-map extra-lightText"></i> 23KM
+                </div>
+              </div>
+            </div>
+            <div class="shipment-item">
+              <div class="small-text semiBold">
+                Shipment No
+                <span class="primaryColor bold-text text-margin-left"
+                  >6547</span
+                >
+                <span class="pill extra-small-text text-margin-left"
+                  >Enroute to loading point</span
+                >
+              </div>
+              <div class="pickup-dropoff-location">
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Pickup Location</div>
+                  <div class="text semiBold location-address">
+                    Miami
+                  </div>
+                </div>
+                <div class="location-diff-line">
+                  <img
+                    src="assets/images/location-line-hor.svg"
+                    alt="Location Line"
+                  />
+                </div>
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Dropoff Location</div>
+                  <div class="text semiBold location-address">
+                    Houston
+                  </div>
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-user-tie extra-lightText"></i> 05
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-money-bill-wave extra-lightText"></i> USD
+                  15,000
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-calendar-day extra-lightText"></i> 21 Nov
+                  2020 at 10:32 AM
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-clock extra-lightText"></i> 5 Hours left
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-map extra-lightText"></i> 23KM
+                </div>
+              </div>
+            </div>
+            <div class="shipment-item">
+              <div class="small-text semiBold">
+                Shipment No
+                <span class="primaryColor bold-text text-margin-left"
+                  >6547</span
+                >
+                <span class="pill extra-small-text text-margin-left"
+                  >Enroute to loading point</span
+                >
+              </div>
+              <div class="pickup-dropoff-location">
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Pickup Location</div>
+                  <div class="text semiBold location-address">
+                    San Diego
+                  </div>
+                </div>
+                <div class="location-diff-line">
+                  <img
+                    src="assets/images/location-line-hor.svg"
+                    alt="Location Line"
+                  />
+                </div>
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Dropoff Location</div>
+                  <div class="text semiBold location-address">Las Vegas</div>
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-user-tie extra-lightText"></i> 05
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-money-bill-wave extra-lightText"></i> USD
+                  15,000
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-calendar-day extra-lightText"></i> 21 Nov
+                  2020 at 10:32 AM
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-clock extra-lightText"></i> 5 Hours left
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-map extra-lightText"></i> 23KM
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="completed-shipments"
+            class="tab-pane"
+            role="tabpanel"
+            aria-labelledby="completed-shipments"
+          >
+            <div class="shipment-item">
+              <div class="small-text semiBold">
+                Shipment No
+                <span class="primaryColor bold-text text-margin-left"
+                  >6547</span
+                >
+                <span class="pill extra-small-text text-margin-left"
+                  >Enroute to loading point</span
+                >
+              </div>
+              <div class="pickup-dropoff-location">
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Pickup Location</div>
+                  <div class="text semiBold location-address">
+                    San Antonio
+                  </div>
+                </div>
+                <div class="location-diff-line">
+                  <img
+                    src="assets/images/location-line-hor.svg"
+                    alt="Location Line"
+                  />
+                </div>
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Dropoff Location</div>
+                  <div class="text semiBold location-address">El Paso</div>
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-user-tie extra-lightText"></i> 05
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-money-bill-wave extra-lightText"></i> USD
+                  15,000
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-calendar-day extra-lightText"></i> 21 Nov
+                  2020 at 10:32 AM
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-clock extra-lightText"></i> 5 Hours left
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-map extra-lightText"></i> 23KM
+                </div>
+              </div>
+            </div>
+            <div class="shipment-item">
+              <div class="small-text semiBold">
+                Shipment No
+                <span class="primaryColor bold-text text-margin-left"
+                  >6547</span
+                >
+                <span class="pill extra-small-text text-margin-left"
+                  >Enroute to loading point</span
+                >
+              </div>
+              <div class="pickup-dropoff-location">
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Pickup Location</div>
+                  <div class="text semiBold location-address">
+                    San Jose
+                  </div>
+                </div>
+                <div class="location-diff-line">
+                  <img
+                    src="assets/images/location-line-hor.svg"
+                    alt="Location Line"
+                  />
+                </div>
+                <div class="location-info">
+                  <div class="extra-small-text lightText">Dropoff Location</div>
+                  <div class="text semiBold location-address">
+                    Dallas
+                  </div>
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-user-tie extra-lightText"></i> 05
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-truck extra-lightText"></i> 15.3m Flatbed
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-money-bill-wave extra-lightText"></i> USD
+                  15,000
+                </div>
+              </div>
+              <div class="shipment-info">
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-calendar-day extra-lightText"></i> 21 Nov
+                  2020 at 10:32 AM
+                </div>
+                <div class="extra-small-text semiBold shipment-info-item">
+                  <i class="fas fa-clock extra-lightText"></i> 5 Hours left
+                </div>
+                <div
+                  class="extra-small-text semiBold shipment-info-item nomargin"
+                >
+                  <i class="fas fa-map extra-lightText"></i> 23KM
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="single-shipment-details-panel-wrapper">
+          <div class="shipment-detail-panel" data-simplebar>
+            <div
+              class="close-single-shipment-detail-mobTab"
+              id="close-single-shipment-detail-panel"
+            >
+              <i class="far fa-times"></i>
+            </div>
+            <div class="shipment-driver-wrapper text panel-block">
+              <div class="driver-panel-left">
+                <div class="extra-small-text semiBold darkText">
+                  Driver <span class="pill extra-small-text">DXB 57845</span>
+                </div>
+                <div class="text semiBold">
+                  <i class="fas fa-user-tie text primaryColor"></i> John Doe
+                </div>
+              </div>
+              <div class="driver-panel-right">
+                <button>
+                  <i class="fas fa-ballot darkText small-text"></i>
+                </button>
+                <button>
+                  <i class="fas fa-phone-alt darkText small-text"></i>
+                </button>
+              </div>
+            </div>
+            <div class="panel-block side-margin">
+              <div class="block-heading small-text darkText semiBold">
+                Status
+              </div>
+              <div class="text">
+                On The Way
+                <i class="fas fa-arrow-alt-circle-right primaryColor"></i>
+              </div>
+            </div>
+            <div class="panel-block side-margin with-locat-inf">
+              <div>
+                <div class="block-heading small-text darkText semiBold">
+                  Pickup Location
+                </div>
+                <div class="text semiBold">Austin</div>
+              </div>
+              <div>
+                <img
+                  src="assets/images/location-line.svg"
+                  alt="Location Line Diff"
+                />
+              </div>
+              <div>
+                <div class="block-heading small-text darkText semiBold">
+                  Dropoff Location
+                </div>
+                <div class="text semiBold">New York</div>
+              </div>
+            </div>
+            <div class="panel-block side-margin">
+              <div class="block-heading small-text darkText semiBold">
+                Vehicle Information
+              </div>
+              <div class="text">15.3m Flatbed</div>
+            </div>
+            <div class="panel-block side-margin">
+              <div class="block-heading small-text darkText semiBold">
+                No.of Vehicles
+              </div>
+              <div class="text">01</div>
+            </div>
+            <div class="panel-block side-margin">
+              <div class="block-heading small-text darkText semiBold">
+                Departure Date
+              </div>
+              <div class="text">21 Nov 2020 at 10:32 AM</div>
+            </div>
+            <div class="panel-block side-margin">
+              <div class="block-heading small-text darkText semiBold">
+                Arrival Date
+              </div>
+              <div class="text">23 Nov 2020 at 10:32 AM</div>
+            </div>
+            <div class="panel-block side-margin">
+              <div class="block-heading small-text darkText semiBold">
+                KM Left
+              </div>
+              <div class="text">23 Km</div>
+            </div>
+            <div class="panel-block shipment-amount-block side-margin">
+              <div>
+                <div class="small-text darkText semiBold">Shipment No</div>
+                <div class="primaryColor bold-text heading-text">6547</div>
+              </div>
+              <div>
+                <div class="small-text darkText semiBold">Total Price</div>
+                <div class="bold-text heading-text">USD 25000</div>
+              </div>
+            </div>
+            <button
+              class="close-single-shipment-detail"
+              id="close-single-shipment-detail-panel2"
+            >
+              <i class="far fa-times"></i>
+            </button>
+            <button class="download-single-shipment-detail">
+              <i class="far fa-download"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="shipments-map">
+        <div id="googleMap">
+          <img src="assets/images/google-map-full.png" alt="Google Map Full Image" style="height: 100%; width: 100%; object-fit: cover;"/>
+        </div>
+      </div>
+      <div class="dashboard-filter-panel">
+        <div class="heading-text semiBold">Filters</div>
+        <div class="dashboard-filter-form">
+          <div class="row">
+            <div class="custom-filter-col dashboard-filter-location-col">
+              <div class="label small-text semiBold">Search by Location</div>
+              <div
+                class="dashboard-filter-formfield mdc-select mdc-select--outlined"
+              >
+                <div
+                  class="mdc-select__anchor"
+                  aria-labelledby="outlined-select-label"
+                >
+                  <span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span
+                        id="outlined-select-label"
+                        class="mdc-floating-label small-text"
+                        >From</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><span class="mdc-select__selected-text-container"
+                    ><span
+                      id="demo-selected-text"
+                      class="mdc-select__selected-text small-text"
+                    ></span> </span
+                  ><span class="mdc-select__dropdown-icon"
+                    ><svg
+                      class="mdc-select__dropdown-icon-graphic"
+                      viewBox="7 10 10 5"
+                      focusable="false"
+                    >
+                      <polygon
+                        class="mdc-select__dropdown-icon-inactive"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 10 12 15 17 10"
+                      ></polygon>
+                      <polygon
+                        class="mdc-select__dropdown-icon-active"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 15 12 10 17 15"
+                      ></polygon></svg
+                  ></span>
+                </div>
+                <div
+                  class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+                >
+                  <ul class="mdc-list">
+                    <li class="mdc-list-item" data-value="karachi">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text"
+                        >New York, USA</span
+                      >
+                    </li>
+                    <li class="mdc-list-item" data-value="doha">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">London, UK</span>
+                    </li>
+                    <li class="mdc-list-item" data-value="dubai">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">Sydney, Australia</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="dashboard-filter-formfield mdc-select mdc-select--outlined"
+              >
+                <div
+                  class="mdc-select__anchor"
+                  aria-labelledby="outlined-select-label"
+                >
+                  <span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span
+                        id="outlined-select-label"
+                        class="mdc-floating-label small-text"
+                        >To</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><span class="mdc-select__selected-text-container"
+                    ><span
+                      id="demo-selected-text"
+                      class="mdc-select__selected-text small-text"
+                    ></span> </span
+                  ><span class="mdc-select__dropdown-icon"
+                    ><svg
+                      class="mdc-select__dropdown-icon-graphic"
+                      viewBox="7 10 10 5"
+                      focusable="false"
+                    >
+                      <polygon
+                        class="mdc-select__dropdown-icon-inactive"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 10 12 15 17 10"
+                      ></polygon>
+                      <polygon
+                        class="mdc-select__dropdown-icon-active"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 15 12 10 17 15"
+                      ></polygon></svg
+                  ></span>
+                </div>
+                <div
+                  class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+                >
+                  <ul class="mdc-list">
+                    <li class="mdc-list-item" data-value="karachi">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text"
+                        >San Diego, USA</span
+                      >
+                    </li>
+                    <li class="mdc-list-item" data-value="doha">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">San Francisco, USA</span>
+                    </li>
+                    <li class="mdc-list-item" data-value="dubai">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">Toronto, Canada</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="custom-filter-col">
+              <div class="label small-text semiBold">Date & Time Range</div>
+              <div class="dashboard-filter-formfield">
+                <label
+                  class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label nomargin"
+                  ><span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__trailing"></span> </span
+                  ><i
+                    class="far fa-calendar mdc-text-field__icon mdc-text-field__icon--leading small-text"
+                    tabindex="0"
+                    role="button"
+                  ></i>
+                  <input
+                    class="mdc-text-field__input small-text"
+                    name="daterange"
+                    aria-label="Label"
+                    placeholder="Select Date Range"
+                /></label>
+              </div>
+              <div class="dashboard-filter-formfield duration-picker-btns">
+                <div
+                  class="block-btn small border dashboard-filter-btn raisedHover"
+                  id="dashboard-filter-today"
+                >
+                  Today
+                </div>
+                <div
+                  class="block-btn small border dashboard-filter-btn raisedHover"
+                  id="dashboard-filter-lastweek"
+                >
+                  Last 7 Days
+                </div>
+                <div
+                  class="block-btn small border active dashboard-filter-btn raisedHover"
+                  id="dashboard-filter-thismonth"
+                >
+                  This Month
+                </div>
+              </div>
+            </div>
+            <div class="custom-filter-col">
+              <div class="label small-text semiBold">Select Vehicle Type</div>
+              <div
+                class="dashboard-filter-formfield mdc-select mdc-select--outlined"
+              >
+                <div
+                  class="mdc-select__anchor"
+                  aria-labelledby="outlined-select-label"
+                >
+                  <span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span
+                        id="outlined-select-label"
+                        class="mdc-floating-label small-text"
+                        >Vehicle Type</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><span class="mdc-select__selected-text-container"
+                    ><span
+                      id="demo-selected-text"
+                      class="mdc-select__selected-text small-text"
+                    ></span> </span
+                  ><span class="mdc-select__dropdown-icon"
+                    ><svg
+                      class="mdc-select__dropdown-icon-graphic"
+                      viewBox="7 10 10 5"
+                      focusable="false"
+                    >
+                      <polygon
+                        class="mdc-select__dropdown-icon-inactive"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 10 12 15 17 10"
+                      ></polygon>
+                      <polygon
+                        class="mdc-select__dropdown-icon-active"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 15 12 10 17 15"
+                      ></polygon></svg
+                  ></span>
+                </div>
+                <div
+                  class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+                >
+                  <ul class="mdc-list">
+                    <li class="mdc-list-item" data-value="truck">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">Truck</span>
+                    </li>
+                    <li class="mdc-list-item" data-value="mazda">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">Mazda</span>
+                    </li>
+                    <li class="mdc-list-item" data-value="bus">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">Bus</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="custom-filter-col">
+              <div class="label small-text semiBold">Select Movement Type</div>
+              <div
+                class="dashboard-filter-formfield mdc-select mdc-select--outlined"
+              >
+                <div
+                  class="mdc-select__anchor"
+                  aria-labelledby="outlined-select-label"
+                >
+                  <span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span
+                        id="outlined-select-label"
+                        class="mdc-floating-label small-text"
+                        >Movement Type</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><span class="mdc-select__selected-text-container"
+                    ><span
+                      id="demo-selected-text"
+                      class="mdc-select__selected-text small-text"
+                    ></span> </span
+                  ><span class="mdc-select__dropdown-icon"
+                    ><svg
+                      class="mdc-select__dropdown-icon-graphic"
+                      viewBox="7 10 10 5"
+                      focusable="false"
+                    >
+                      <polygon
+                        class="mdc-select__dropdown-icon-inactive"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 10 12 15 17 10"
+                      ></polygon>
+                      <polygon
+                        class="mdc-select__dropdown-icon-active"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 15 12 10 17 15"
+                      ></polygon></svg
+                  ></span>
+                </div>
+                <div
+                  class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+                >
+                  <ul class="mdc-list">
+                    <li class="mdc-list-item" data-value="intra-city">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">Intra City</span>
+                    </li>
+                    <li class="mdc-list-item" data-value="inter-city">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">Inter City</span>
+                    </li>
+                    <li class="mdc-list-item" data-value="cross-border">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">Cross Border</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="custom-filter-col nomargin">
+              <div class="label small-text semiBold">Select Status</div>
+              <div
+                class="dashboard-filter-formfield mdc-select mdc-select--outlined"
+              >
+                <div
+                  class="mdc-select__anchor"
+                  aria-labelledby="outlined-select-label"
+                >
+                  <span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span
+                        id="outlined-select-label"
+                        class="mdc-floating-label small-text"
+                        >Status</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><span class="mdc-select__selected-text-container"
+                    ><span
+                      id="demo-selected-text"
+                      class="mdc-select__selected-text text"
+                    ></span> </span
+                  ><span class="mdc-select__dropdown-icon"
+                    ><svg
+                      class="mdc-select__dropdown-icon-graphic"
+                      viewBox="7 10 10 5"
+                      focusable="false"
+                    >
+                      <polygon
+                        class="mdc-select__dropdown-icon-inactive"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 10 12 15 17 10"
+                      ></polygon>
+                      <polygon
+                        class="mdc-select__dropdown-icon-active"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 15 12 10 17 15"
+                      ></polygon></svg
+                  ></span>
+                </div>
+                <div
+                  class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+                >
+                  <ul class="mdc-list">
+                    <li class="mdc-list-item" data-value="on-going">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">Ongoing</span>
+                    </li>
+                    <li class="mdc-list-item" data-value="upcoming">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">Upcoming</span>
+                    </li>
+                    <li class="mdc-list-item" data-value="completed">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">Completed</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard-filter-actions">
+          <button
+            class="block-btn trans ripple medium"
+            id="discard-custom-filter"
+          >
+            <span class="text semiBold">Discard</span>
+          </button>
+          <button
+            class="block-btn raised ripple medium"
+            id="apply-filter-dashboard-btn"
+          >
+            <span class="text semiBold">Apply</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-wrapper notifications-sidebar">
+      <div class="overlay d-none"></div>
+      <div class="details-panel openSmall">
+        <div class="sidebar-top">
+          <div class="main-heading sidebar-padding">
+            Notifications
+            <button class="refresh-notifications">
+              <i class="far fa-redo-alt extra-lightText"></i>
+            </button>
+          </div>
+          <div class="notifications-wrapper sidebar-padding" data-simplebar>
+            <div class="notification-time text semiBold darkText">Today</div>
+            <div class="notification-item new-notification">
+              <div class="text">
+                Shipment no <span class="primaryColor bold-text">8751</span> -
+                Vehicle (JY-8177) is unloading cargo at delivery location
+              </div>
+              <div class="small-text extra-lightText">25 mins ago</div>
+            </div>
+            <div class="notification-item">
+              <div class="text">
+                Shipment no <span class="primaryColor bold-text">8751</span> -
+                Vehicle (JY-8177) is unloading cargo at delivery location
+              </div>
+              <div class="small-text extra-lightText">1 hour ago</div>
+            </div>
+            <div class="notification-time text semiBold darkText">Past</div>
+            <div class="notification-item">
+              <div class="text">
+                Shipment no <span class="primaryColor bold-text">8751</span> -
+                Vehicle (JY-8177) is unloading cargo at delivery location
+              </div>
+              <div class="small-text extra-lightText">
+                22 Jan, 2020 , 10:53 am
+              </div>
+            </div>
+            <div class="notification-item">
+              <div class="text">
+                Shipment no <span class="primaryColor bold-text">8751</span> -
+                Vehicle (JY-8177) is unloading cargo at delivery location
+              </div>
+              <div class="small-text extra-lightText">
+                20 Jan, 2020 , 08:00 pm
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar-bottom">
+          <button class="heading-text extra-lightText">Clear All</button>
+        </div>
+        <div id="mobile-tablet-close-sidebar-btn">
+          <i class="far fa-times"></i>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-wrapper new-shipment-sidebar">
+      <div class="overlay d-none"></div>
+      <div class="details-panel">
+        <div class="sidebar-top">
+          <div class="main-heading sidebar-padding">Create New Shipment</div>
+          <form class="new-shipment-form">
+            <div class="form-stepper sidebar-padding">
+              <div class="step step-1 active with-step-line">
+                <div class="count-circle text bold-text">
+                  <span class="step-no">1</span>
+                  <span class="check-icon small-text"
+                    ><i class="fal fa-check"></i
+                  ></span>
+                </div>
+                <div class="label text bold-text">Shipment Details</div>
+                <div class="step-line"></div>
+              </div>
+              <div class="step step-2 with-step-line">
+                <div class="count-circle text bold-text">
+                  <span class="step-no">2</span>
+                  <span class="check-icon small-text"
+                    ><i class="fal fa-check"></i
+                  ></span>
+                </div>
+                <div class="label text bold-text">Select Vehicle</div>
+                <div class="step-line"></div>
+              </div>
+              <div class="step step-3">
+                <div class="count-circle text bold-text">
+                  <span class="step-no">3</span>
+                  <span class="check-icon small-text"
+                    ><i class="far fa-check"></i
+                  ></span>
+                </div>
+                <div class="label text bold-text">Review</div>
+              </div>
+            </div>
+            <div
+              class="form-wrapper step-1-form sidebar-padding"
+              data-simplebar
+            >
+              <div class="sub-heading text bold-text">info</div>
+              <div class="ship-form-field-wrap">
+                <label
+                  class="custom-field mdc-text-field mdc-text-field--outlined"
+                  ><span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span class="mdc-floating-label text" id="my-label-id"
+                        >Pickup Address</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><input
+                    class="mdc-text-field__input text"
+                    aria-labelledby="my-label-id"
+                /></label>
+              </div>
+              <div class="ship-form-field-wrap">
+                <label
+                  class="custom-field mdc-text-field mdc-text-field--outlined"
+                  ><span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span class="mdc-floating-label text" id="my-label-id"
+                        >Dropoff Address</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><input
+                    class="mdc-text-field__input text"
+                    aria-labelledby="my-label-id"
+                /></label>
+              </div>
+              <div class="ship-form-field-wrap row">
+                <div class="custom-col col-lg-6 padding-right">
+                  <label
+                    class="custom-field mdc-text-field mdc-text-field--outlined mdc-text-field--no-label"
+                    ><span class="mdc-notched-outline"
+                      ><span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__trailing"></span> </span
+                    ><i
+                      class="far fa-calendar mdc-text-field__icon mdc-text-field__icon--leading text"
+                      tabindex="0"
+                      role="button"
+                    ></i>
+                    <input
+                      class="mdc-text-field__input text"
+                      name="singledate"
+                      aria-label="Label"
+                      placeholder="Pickup Date"
+                  /></label>
+                </div>
+                <div class="custom-col col-lg-6 padding-left">
+                  <label
+                    class="custom-field mdc-text-field mdc-text-field--outlined mdc-text-field--no-label"
+                    ><span class="mdc-notched-outline"
+                      ><span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__trailing"></span> </span
+                    ><i
+                      class="far fa-clock mdc-text-field__icon mdc-text-field__icon--leading text"
+                      tabindex="0"
+                      role="button"
+                    ></i>
+                    <input
+                      class="mdc-text-field__input text"
+                      name="timepicker"
+                      aria-label="Label"
+                      placeholder="Pickup Time"
+                  /></label>
+                </div>
+              </div>
+              <div class="ship-form-field-wrap">
+                <label
+                  class="custom-field mdc-text-field mdc-text-field--outlined"
+                  ><span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span class="mdc-floating-label text" id="my-label-id"
+                        >Loading/Unloading Free hours</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><input
+                    class="mdc-text-field__input text"
+                    aria-labelledby="my-label-id"
+                /></label>
+              </div>
+              <div class="ship-form-field-wrap">
+                <div class="mdc-select mdc-select--outlined">
+                  <div
+                    class="mdc-select__anchor"
+                    aria-labelledby="outlined-select-label"
+                  >
+                    <span class="mdc-notched-outline"
+                      ><span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch"
+                        ><span
+                          id="outlined-select-label"
+                          class="mdc-floating-label text"
+                          >Cargo Packaging</span
+                        > </span
+                      ><span
+                        class="mdc-notched-outline__trailing"
+                      ></span> </span
+                    ><span class="mdc-select__selected-text-container"
+                      ><span
+                        id="demo-selected-text"
+                        class="mdc-select__selected-text text"
+                      ></span> </span
+                    ><span class="mdc-select__dropdown-icon"
+                      ><svg
+                        class="mdc-select__dropdown-icon-graphic"
+                        viewBox="7 10 10 5"
+                        focusable="false"
+                      >
+                        <polygon
+                          class="mdc-select__dropdown-icon-inactive"
+                          stroke="none"
+                          fill-rule="evenodd"
+                          points="7 10 12 15 17 10"
+                        ></polygon>
+                        <polygon
+                          class="mdc-select__dropdown-icon-active"
+                          stroke="none"
+                          fill-rule="evenodd"
+                          points="7 15 12 10 17 15"
+                        ></polygon></svg
+                    ></span>
+                  </div>
+                  <div
+                    class="mdc-select__menu mdc-select__menu-above mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+                  >
+                    <ul class="mdc-list">
+                      <li class="mdc-list-item" data-value="boxes">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Boxes</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="bricks">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Bricks</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="container">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Container</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="boxes">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Boxes</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="bricks">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Bricks</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="container">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Container</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="boxes">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Boxes</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="bricks">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Bricks</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="container">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Container</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="boxes">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Boxes</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="bricks">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Bricks</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="container">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Container</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="boxes">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Boxes</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="bricks">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Bricks</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="container">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Container</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="boxes">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Boxes</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="bricks">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Bricks</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="container">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Container</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ship-form-field-wrap">
+                <div class="mdc-select mdc-select--outlined">
+                  <div
+                    class="mdc-select__anchor"
+                    aria-labelledby="outlined-select-label"
+                  >
+                    <span class="mdc-notched-outline"
+                      ><span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch"
+                        ><span
+                          id="outlined-select-label"
+                          class="mdc-floating-label text"
+                          >Cargo Weight(Tons)</span
+                        > </span
+                      ><span
+                        class="mdc-notched-outline__trailing"
+                      ></span> </span
+                    ><span class="mdc-select__selected-text-container"
+                      ><span
+                        id="demo-selected-text"
+                        class="mdc-select__selected-text text"
+                      ></span> </span
+                    ><span class="mdc-select__dropdown-icon"
+                      ><svg
+                        class="mdc-select__dropdown-icon-graphic"
+                        viewBox="7 10 10 5"
+                        focusable="false"
+                      >
+                        <polygon
+                          class="mdc-select__dropdown-icon-inactive"
+                          stroke="none"
+                          fill-rule="evenodd"
+                          points="7 10 12 15 17 10"
+                        ></polygon>
+                        <polygon
+                          class="mdc-select__dropdown-icon-active"
+                          stroke="none"
+                          fill-rule="evenodd"
+                          points="7 15 12 10 17 15"
+                        ></polygon></svg
+                    ></span>
+                  </div>
+                  <div
+                    class="mdc-select__menu mdc-select__menu-above mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+                  >
+                    <ul class="mdc-list">
+                      <li class="mdc-list-item" data-value="1-ton">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">1 Ton</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="2-tons">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">2 Tons</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="3-tons">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">3 Tons</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ship-form-field-wrap">
+                <label
+                  class="custom-textarea-field mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--no-label"
+                  ><span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span class="mdc-floating-label text" id="my-label-id"
+                        >Cargo Description</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><span class="mdc-text-field__resizer">
+                    <textarea
+                      class="mdc-text-field__input text"
+                      rows="3"
+                      aria-label="Label"
+                    ></textarea></span
+                ></label>
+              </div>
+            </div>
+            <div
+              class="form-wrapper step-2-form sidebar-padding d-none"
+              data-simplebar
+            >
+              <div class="sub-heading text bold-text">info</div>
+              <div class="ship-form-field-wrap">
+                <div class="mdc-select mdc-select--outlined">
+                  <div
+                    class="mdc-select__anchor"
+                    aria-labelledby="outlined-select-label"
+                  >
+                    <span class="mdc-notched-outline"
+                      ><span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch"
+                        ><span
+                          id="outlined-select-label"
+                          class="mdc-floating-label text"
+                          >No of Vehicles</span
+                        > </span
+                      ><span
+                        class="mdc-notched-outline__trailing"
+                      ></span> </span
+                    ><span class="mdc-select__selected-text-container"
+                      ><span
+                        id="demo-selected-text"
+                        class="mdc-select__selected-text text"
+                      ></span> </span
+                    ><span class="mdc-select__dropdown-icon"
+                      ><svg
+                        class="mdc-select__dropdown-icon-graphic"
+                        viewBox="7 10 10 5"
+                        focusable="false"
+                      >
+                        <polygon
+                          class="mdc-select__dropdown-icon-inactive"
+                          stroke="none"
+                          fill-rule="evenodd"
+                          points="7 10 12 15 17 10"
+                        ></polygon>
+                        <polygon
+                          class="mdc-select__dropdown-icon-active"
+                          stroke="none"
+                          fill-rule="evenodd"
+                          points="7 15 12 10 17 15"
+                        ></polygon></svg
+                    ></span>
+                  </div>
+                  <div
+                    class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+                  >
+                    <ul class="mdc-list">
+                      <li class="mdc-list-item" data-value="4">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">4</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="5">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">5</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="6">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">6</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ship-form-field-wrap">
+                <div class="mdc-select mdc-select--outlined">
+                  <div
+                    class="mdc-select__anchor"
+                    aria-labelledby="outlined-select-label"
+                  >
+                    <span class="mdc-notched-outline"
+                      ><span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch"
+                        ><span
+                          id="outlined-select-label"
+                          class="mdc-floating-label text"
+                          >Vehicle Type</span
+                        > </span
+                      ><span
+                        class="mdc-notched-outline__trailing"
+                      ></span> </span
+                    ><span class="mdc-select__selected-text-container"
+                      ><span
+                        id="demo-selected-text"
+                        class="mdc-select__selected-text text"
+                      ></span> </span
+                    ><span class="mdc-select__dropdown-icon"
+                      ><svg
+                        class="mdc-select__dropdown-icon-graphic"
+                        viewBox="7 10 10 5"
+                        focusable="false"
+                      >
+                        <polygon
+                          class="mdc-select__dropdown-icon-inactive"
+                          stroke="none"
+                          fill-rule="evenodd"
+                          points="7 10 12 15 17 10"
+                        ></polygon>
+                        <polygon
+                          class="mdc-select__dropdown-icon-active"
+                          stroke="none"
+                          fill-rule="evenodd"
+                          points="7 15 12 10 17 15"
+                        ></polygon></svg
+                    ></span>
+                  </div>
+                  <div
+                    class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+                  >
+                    <ul class="mdc-list">
+                      <li class="mdc-list-item" data-value="truck">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Truck</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="mazda">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text">Mazda</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="truck-flatbed">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text text"
+                          >Truck Flatbed</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="custom-field mdc-select mdc-select--outlined">
+                <div
+                  class="mdc-select__anchor"
+                  aria-labelledby="outlined-select-label"
+                >
+                  <span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span
+                        id="outlined-select-label"
+                        class="mdc-floating-label text"
+                        >Vehicle Sub Type</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><span class="mdc-select__selected-text-container"
+                    ><span
+                      id="demo-selected-text"
+                      class="mdc-select__selected-text text"
+                    ></span> </span
+                  ><span class="mdc-select__dropdown-icon"
+                    ><svg
+                      class="mdc-select__dropdown-icon-graphic"
+                      viewBox="7 10 10 5"
+                      focusable="false"
+                    >
+                      <polygon
+                        class="mdc-select__dropdown-icon-inactive"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 10 12 15 17 10"
+                      ></polygon>
+                      <polygon
+                        class="mdc-select__dropdown-icon-active"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 15 12 10 17 15"
+                      ></polygon></svg
+                  ></span>
+                </div>
+                <div
+                  class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+                >
+                  <ul class="mdc-list">
+                    <li class="mdc-list-item" data-value="flatbed">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">Flatbed</span>
+                    </li>
+                    <li class="mdc-list-item" data-value="22-wheeler">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">22 Wheeler</span>
+                    </li>
+                    <li class="mdc-list-item" data-value="16-wheeler">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">16 Wheeler</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ship-vehicle-images-wrap">
+                <div class="vehicle-img">
+                  <img src="assets/images/truck1.jpg" alt="Vehicle Image" />
+                </div>
+                <div class="vehicle-img">
+                  <img src="assets/images/truck2.jpg" alt="Vehicle Image" />
+                </div>
+                <div class="vehicle-img">
+                  <img src="assets/images/truck3.jpg" alt="Vehicle Image" />
+                </div>
+                <div class="vehicle-img">
+                  <img src="assets/images/truck4.jpg" alt="Vehicle Image" />
+                </div>
+                <div class="vehicle-img">
+                  <img src="assets/images/truck5.jpg" alt="Vehicle Image" />
+                </div>
+                <div class="vehicle-img">
+                  <img src="assets/images/truck6.jpg" alt="Vehicle Image" />
+                </div>
+                <div class="vehicle-img">
+                  <img src="assets/images/truck7.jpg" alt="Vehicle Image" />
+                </div>
+                <div class="vehicle-img">
+                  <img src="assets/images/truck8.jpg" alt="Vehicle Image" />
+                </div>
+                <div class="vehicle-img">
+                  <img src="assets/images/truck3.jpg" alt="Vehicle Image" />
+                </div>
+                <div class="vehicle-img">
+                  <img src="assets/images/truck1.jpg" alt="Vehicle Image" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="form-wrapper step-3-form sidebar-padding d-none"
+              data-simplebar
+            >
+              <div class="sub-heading text bold-text">
+                Review the information
+              </div>
+              <div class="shipment-review-item">
+                <div class="left-content text lightText semiBold">
+                  Pickup Address
+                </div>
+                <div class="right-content text bold-text">
+                  Manhattan street 7, New York
+                </div>
+              </div>
+              <div class="shipment-review-item">
+                <div class="left-content text lightText semiBold">
+                  Dropoff Address
+                </div>
+                <div class="right-content text bold-text">
+                  Warehouse 13D, Oklahoma
+                </div>
+              </div>
+              <div class="shipment-review-item">
+                <div class="left-content text lightText semiBold">
+                  Date and Time
+                </div>
+                <div class="right-content text bold-text">
+                  11:30 AM on 20 Nov, 2020
+                </div>
+              </div>
+              <div class="shipment-review-item">
+                <div class="left-content text lightText semiBold">
+                  Loading Time
+                </div>
+                <div class="right-content text bold-text">11:30 AM</div>
+              </div>
+              <div class="shipment-review-item">
+                <div class="left-content text lightText semiBold">
+                  Cargo Packaging
+                </div>
+                <div class="right-content text bold-text">Boxes</div>
+              </div>
+              <div class="shipment-review-item">
+                <div class="left-content text lightText semiBold">
+                  Cargo Weight
+                </div>
+                <div class="right-content text bold-text">10 Tons</div>
+              </div>
+              <div class="shipment-review-item">
+                <div class="left-content text lightText semiBold">
+                  Vehicle Type
+                </div>
+                <div class="right-content text bold-text">15.3m Flatbed</div>
+              </div>
+              <div class="shipment-review-item">
+                <div class="left-content text lightText semiBold">
+                  No of Vehicle
+                </div>
+                <div class="right-content text bold-text">04</div>
+              </div>
+              <div class="shipment-review-item no-border">
+                <div class="left-content text lightText semiBold">
+                  Description
+                </div>
+                <div class="right-content text bold-text">
+                  10 Tons of Boxes to be shipped on the given address.
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="sidebar-bottom sidebar-padding">
+          <button
+            class="block-btn medium trans ripple text"
+            id="cancel-newshipment-creation-btn"
+          >
+            Cancel
+          </button>
+          <div class="sidebar-btm-btnsGrp row nomargin">
+            <button
+              class="block-btn trans medium ripple text d-none"
+              id="new-shipment-back-btn"
+            >
+              Back
+            </button>
+            <button
+              class="block-btn raised medium ripple text"
+              id="new-shipment-next-btn"
+            >
+              Next
+            </button>
+            <button
+              class="block-btn raised medium ripple text d-none"
+              id="new-shipment-finish-btn"
+            >
+              Finish
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-wrapper currency-converter-sidebar">
+      <div class="overlay d-none"></div>
+      <div class="details-panel openSmall">
+        <div class="sidebar-top">
+          <div class="main-heading sidebar-padding">Currency Converter</div>
+          <form class="currency-converter-form">
+            <div class="form-wrapper step-1-form sidebar-padding">
+              <div class="custom-col col-lg-12">
+                <label
+                  class="custom-field mdc-text-field mdc-text-field--outlined"
+                  ><span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__trailing"></span> </span
+                  ><input
+                    value="1000"
+                    class="mdc-text-field__input text"
+                    aria-labelledby="my-label-id"
+                /></label>
+              </div>
+              <div class="custom-col col-lg-12 mdc-select mdc-select--outlined">
+                <div
+                  class="mdc-select__anchor"
+                  aria-labelledby="outlined-select-label"
+                >
+                  <span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__trailing"></span> </span
+                  ><span class="mdc-select__selected-text-container"
+                    ><span
+                      id="demo-selected-text"
+                      class="mdc-select__selected-text text"
+                    ></span> </span
+                  ><span class="mdc-select__dropdown-icon"
+                    ><svg
+                      class="mdc-select__dropdown-icon-graphic"
+                      viewBox="7 10 10 5"
+                      focusable="false"
+                    >
+                      <polygon
+                        class="mdc-select__dropdown-icon-inactive"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 10 12 15 17 10"
+                      ></polygon>
+                      <polygon
+                        class="mdc-select__dropdown-icon-active"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 15 12 10 17 15"
+                      ></polygon></svg
+                  ></span>
+                </div>
+                <div
+                  class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+                >
+                  <ul class="mdc-list">
+                    <li
+                      class="mdc-list-item mdc-list-item--selected"
+                      data-value="pkr"
+                    >
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text"
+                        >USA Dollar</span
+                      >
+                    </li>
+                    <li class="mdc-list-item" data-value="uae-dirham">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">UAE Dirham</span>
+                    </li>
+                    <li class="mdc-list-item" data-value="container">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">UK Pound</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="section-gap"></div>
+              <div class="custom-col col-lg-12">
+                <label
+                  class="custom-field mdc-text-field mdc-text-field--outlined"
+                  ><span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__trailing"></span> </span
+                  ><input
+                    value="22.90"
+                    class="mdc-text-field__input text"
+                    aria-labelledby="my-label-id"
+                /></label>
+              </div>
+              <div class="custom-col col-lg-12 mdc-select mdc-select--outlined">
+                <div
+                  class="mdc-select__anchor"
+                  aria-labelledby="outlined-select-label"
+                >
+                  <span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__trailing"></span> </span
+                  ><span class="mdc-select__selected-text-container"
+                    ><span
+                      id="demo-selected-text"
+                      class="mdc-select__selected-text text"
+                    ></span> </span
+                  ><span class="mdc-select__dropdown-icon"
+                    ><svg
+                      class="mdc-select__dropdown-icon-graphic"
+                      viewBox="7 10 10 5"
+                      focusable="false"
+                    >
+                      <polygon
+                        class="mdc-select__dropdown-icon-inactive"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 10 12 15 17 10"
+                      ></polygon>
+                      <polygon
+                        class="mdc-select__dropdown-icon-active"
+                        stroke="none"
+                        fill-rule="evenodd"
+                        points="7 15 12 10 17 15"
+                      ></polygon></svg
+                  ></span>
+                </div>
+                <div
+                  class="mdc-select__menu mdc-menu mdc-menu-surface mdc-menu-surface--fullwidth"
+                >
+                  <ul class="mdc-list">
+                    <li class="mdc-list-item" data-value="pkr">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text"
+                        >USA Dollar</span
+                      >
+                    </li>
+                    <li
+                      class="mdc-list-item mdc-list-item--selected"
+                      data-value="uae-dirham"
+                    >
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">UAE Dirham</span>
+                    </li>
+                    <li class="mdc-list-item" data-value="container">
+                      <span class="mdc-list-item__ripple"></span>
+                      <span class="mdc-list-item__text text">Indian Rupee</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="currency-convert-btn-wrap">
+                <button class="block-btn medium raised ripple text">
+                  Convert
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="sidebar-bottom sidebar-padding">
+          <button
+            class="block-btn medium trans ripple text"
+            id="cancel-currency-converter-btn"
+          >
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="profile-settings-popup">
+      <div class="overlay d-none"></div>
+      <div class="profile-settings-panel">
+        <section class="profile-settings" data-simplebar>
+          <div class="panel-heading text semiBold">
+            <i class="fas fa-user primaryColor"></i> Account Settings
+          </div>
+          <div class="prf-sett-section info-section">
+            <div class="avatar extralarge no-border">
+              <img src="assets/images/user.jpg" alt="User Profile Picture" />
+            </div>
+            <div class="details">
+              <div class="bold-text website-name">"Your Company".com</div>
+              <div class="user-info">
+                <div class="email_address text">dummy@example.com</div>
+                <span class="separator">|</span>
+                <div class="phone_number text">+1 213 451254</div>
+              </div>
+            </div>
+          </div>
+          <div class="prf-sett-section">
+            <div class="row">
+              <div class="custom-col col-lg-6 padding-right">
+                <label
+                  class="custom-field mdc-text-field mdc-text-field--outlined mdc-text-field--label-floating mdc-text-field--disabled nomargin"
+                  ><span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span
+                        class="mdc-floating-label mdc-floating-label--float-above text"
+                        id="my-label-id"
+                        >Email Address</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><input
+                    class="mdc-text-field__input text"
+                    aria-labelledby="my-label-id"
+                    value="dummy@example.com"
+                    disabled="disabled"
+                /></label>
+              </div>
+              <div class="custom-col col-lg-6 padding-left noMargin-mobile-tab">
+                <label
+                  class="custom-field mdc-text-field mdc-text-field--outlined mdc-text-field--label-floating mdc-text-field--disabled nomargin"
+                  ><span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span
+                        class="mdc-floating-label mdc-floating-label--float-above text"
+                        id="my-label-id"
+                        >Mobile Number</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><input
+                    class="mdc-text-field__input text"
+                    aria-labelledby="my-label-id"
+                    value="+97 213 451254"
+                    disabled="disabled"
+                /></label>
+              </div>
+            </div>
+          </div>
+          <div class="prf-sett-section no-border">
+            <div class="chang-psd-heading text semiBold">Change Password</div>
+            <div class="row">
+              <div class="custom-col col-lg-6 padding-right">
+                <label
+                  class="custom-field mdc-text-field mdc-text-field--outlined mdc-text-field--label-floating nomargin"
+                  ><span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span
+                        class="mdc-floating-label mdc-floating-label--float-above text"
+                        id="my-label-id"
+                        >Old Password</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><input
+                    type="password"
+                    class="mdc-text-field__input text"
+                    aria-labelledby="my-label-id"
+                    value="dummy@example.com" />
+                  <i
+                    class="far fa-eye mdc-text-field__icon mdc-text-field__icon--trailing showPassword"
+                    tabindex="0"
+                    role="button"
+                  ></i
+                ></label>
+              </div>
+              <div class="custom-col col-lg-6 padding-left noMargin-mobile-tab">
+                <label
+                  class="custom-field mdc-text-field mdc-text-field--outlined nomargin"
+                  ><span class="mdc-notched-outline"
+                    ><span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch"
+                      ><span class="mdc-floating-label text" id="my-label-id"
+                        >New Password</span
+                      > </span
+                    ><span class="mdc-notched-outline__trailing"></span> </span
+                  ><input
+                    type="password"
+                    class="mdc-text-field__input text"
+                    aria-labelledby="my-label-id" />
+                  <i
+                    class="far fa-eye mdc-text-field__icon mdc-text-field__icon--trailing showPassword"
+                    tabindex="0"
+                    role="button"
+                  ></i
+                ></label>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="profile-settings-actions">
+          <button
+            class="block-btn medium trans text ripple"
+            id="cancel-profile-settings-panel"
+          >
+            Cancel
+          </button>
+          <button
+            class="block-btn medium raised text ripple"
+            id="save-profile-settings-changes"
+          >
+            Save Changes
+          </button>
+        </section>
+      </div>
+    </div>
+    <div class="tablet-mobile-sidebar-menu">
+      <div class="upper-section">
+        <div class="close-tablet-menu" id="close-tablet-mobile-sidebar">
+          <i class="fal fa-times"></i>
+        </div>
+        <div class="menu-items-wrapper">
+          <a class="menu-item" href="dashboard.html">Dashboard </a
+          ><a class="menu-item" href="shipments.html">Shipments </a
+          ><a class="menu-item" id="profile-settings-btn-mobile-tab"
+            >Settings</a
+          >
+        </div>
+      </div>
+      <div class="bottom-section">
+        <div class="user-details-tablet-menu">
+          <div class="avatar medium">
+            <img src="assets/images/user.jpg" alt="User Image" />
+          </div>
+          <div class="mobile-menu-user-info">
+            <div class="heading-text semiBold">John Doe</div>
+            <div class="small-text lightText">johndoe@example.com</div>
+          </div>
+        </div>
+        <div class="tablet-menu-logout-btn text">
+          <i class="far fa-sign-out-alt"></i> Log Out
+        </div>
+      </div>
+    </div>
+    <div class="loader-wrapper d-none">
+      <div class="truck-wrapper">
+        <div class="truck">
+          <div class="truck-container"></div>
+          <div class="glases"></div>
+          <div class="bonet"></div>
+          <div class="base"></div>
+          <div class="base-aux"></div>
+          <div class="wheel-back"></div>
+          <div class="wheel-front"></div>
+          <div class="smoke"></div>
+        </div>
+      </div>
+    </div>
+    <div class="create-new-shipments-fabBtn">
+      <button class="iconButton medium" id="new-shipment-fab-btn">
+        <i class="far fa-plus"></i>
+      </button>
+    </div>
+    <div class="snack-bar-wrapper d-none">
+      <div class="snack-bar-msg-wrapper text"></div>
+      <button class="close-snack-bar"><i class="far fa-times"></i></button>
+    </div>
+    <script src="assets/js/plugins/simplebar.js"></script>
+    <script src="assets/js/shipments.js"></script>
+    <script src="assets/js/common.js"></script>
+    <!-- <script>
+      function myMap() {
+        var mapProp = {
+          center: new google.maps.LatLng(24.8324, 67.080947),
+          zoom: 15,
+        };
+        var map = new google.maps.Map(
+          document.getElementById("googleMap"),
+          mapProp
+        );
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjnIUWZkHBulqyLu1W8W9XaqnP8ApiRLQ&callback=myMap"></script> -->
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/moment.min.js"></script>
+    <script src="assets/js/plugins/daterangepicker.min.js"></script>
+    <script src="assets/js/plugins/mdtimepicker.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
